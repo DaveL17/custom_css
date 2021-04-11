@@ -11,41 +11,8 @@ License: MIT
     --blue_light: #4F6EFF;
     --border_color: #555555;
     --text: #888888;
-}
-
-body {
-    background-color: var(--black);
-    background: var(--black);
-    color: var(--text);
-}
-
-.background {
-    background-color: var(--black);
-    background-image: linear-gradient(#111111, #000000);
-}
-
-.featurette-heading {
-    color: var(--purple_bright);
-    background-image: linear-gradient(#111111, #000000);
-}
-
-.panel-heading h3 {
-    color: var(--text);
-    background-image: linear-gradient(#111111, #000000);
-    background-color: var(--black);
-}
-
-.panel-heading {
-    color: var(--purple_bright);
-    background-image: linear-gradient(#111111, #000000);
-}
-
-.panel-body {
-    background-image: linear-gradient(#222222, #111111);
-}
-
-.text-muted {
-    color: var(--purple_bright);
+    --table_head: #008800;
+    --table_hover: #00FF00;
 }
 
 a {
@@ -56,31 +23,30 @@ a:hover {
     color: var(--purple_bright);
 }
 
-h1 {
-    color: var(--purple_bright);
+.alert-info {
+    background-color: #222222;
+    border-color: var(--border_color);
+    color: #FF0000;
 }
 
-h2 {
-    color: var(--purple_bright);
+.alert-warning {
+    background-color: #222222;
+    border-color: var(--border_color);
+    color: #FF0000;
 }
 
-h3 {
-    color: var(--purple_bright);
+.background {
+    background-color: var(--black);
+    background-image: linear-gradient(#111111, #000000);
 }
 
-h4 {
-    color: var(--purple_bright);
+.bg-warning {
+    background-color: var(--black);
 }
 
-h5 {
-    color: var(--purple_bright);
-}
-
-h6 {
-    color: var(--purple_bright);
-}
-
-p {
+body {
+    background-color: var(--black);
+    background: var(--black);
     color: var(--text);
 }
 
@@ -128,57 +94,6 @@ p {
     border-color: var(--border_color);
 }
 
-input.btn.btn-cancel {
-    background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-    border-color: var(--border_color);
-}
-
-input.btn.btn-cancel:hover {
-    background-image: linear-gradient(var(--blue_light), var(--blue_light));
-    border-color: var(--border_color);
-}
-
-.table-bordered thead {
-    background-color: var(--black);
-    background-image: linear-gradient(#111111, #000000);
-    color: #000;
-    border-top: 1px solid var(--border_color) !important;
-    border-left: 1px solid var(--border_color);
-    border-right: 1px solid var(--border_color);
-}
-
-.table-bordered > tbody > tr > td {
-    background-color: var(--black);
-}
-
-.table-striped > tbody > tr:nth-child(odd) > td {
-    background-color: var(--black);
-}
-
-.table-striped > tbody > tr:nth-child(even) > td {
-    background-color: #151515;
-}
-
-.table > tbody > tr > td.upgrade {
-    background-color: var(--black);
-}
-
-.table .xmark {
-    color: var(--black);
-}
-
-.table > tbody > tr > td.separator {
-    color: var(--black);
-}
-
-.table td.left-indent {
-    color: var(--text);
-}
-
-html {
-    background-color: var(--black);
-}
-
 #contact-section .panel-heading h3 {
     color: #555555;
 }
@@ -187,89 +102,16 @@ html {
     background-image: linear-gradient(#111111, #000000);
 }
 
-.text-primary {
-    color: var(--text)
-}
-
-div.row.topic-filter {
-    background-image: linear-gradient(#111111, #000000);
-}
-
-.form-control {
-    background-color: #F0F0F0;
-}
-
 .date {
     color: var(--text);
-}
-
-.selected {
-    background: #ADFA79;
-}
-
-.alert-warning {
-    background-color: #222222;
-    border-color: var(--border_color);
-    color: #FF0000;
-}
-
-.bg-warning {
-    background-color: var(--black);
-}
-
-.text-warning {
-    color: #FFFB00;
-}
-
-.navbar-inverse {
-    background-image: linear-gradient(#222222, #111111);
-}
-
-.navbar-inverse .navbar-nav > li > a {
-    color: #008800;
-}
-
-.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-    color: #00FF00;
-}
-
-.navbar-inverse .navbar-brand {
-    color: #00FF00;
 }
 
 div.navbar.navbar-default {
     background-image: linear-gradient(#222222, #111111);
 }
 
-.table-bordered > thead > tr > th {
-    background-image: linear-gradient(#222222, #111111);
-}
-
-.table-bordered > thead > tr > th {
-    color: #00FF00;
-}
-
-.form-group label {
-    color: #999999;
-}
-
-#trial-checkbox.checkbox label {
-    color: var(--text);
-}
-
-.alert-info {
-    background-color: #222222;
-    border-color: var(--border_color);
-    color: #FF0000;
-}
-
-.dropdown-menu {
-    background-color: #111111;
-    border-color: var(--border_color);
-}
-
-.dropdown-menu .divider {
-    background-color: #222222;
+div.row.topic-filter {
+    background-image: linear-gradient(#111111, #000000);
 }
 
 div.box {
@@ -296,8 +138,136 @@ div.topic-nav {
     color: var(--blue_light);
 }
 
+.dropdown-menu {
+    background-color: #111111;
+    border-color: var(--border_color);
+}
+
+.dropdown-menu .divider {
+    background-color: #222222;
+}
+
+.featurette-heading {
+    color: var(--purple_bright);
+    background-image: linear-gradient(#111111, #000000);
+}
+
+.form-control {
+    background-color: #F0F0F0;
+}
+
+.form-group label {
+    color: #999999;
+}
+
+h1 {
+    color: var(--purple_bright);
+}
+
+h2 {
+    color: var(--purple_bright);
+}
+
+h3 {
+    color: var(--purple_bright);
+}
+
+h4 {
+    color: var(--purple_bright);
+}
+
+h5 {
+    color: var(--purple_bright);
+}
+
+h6 {
+    color: var(--purple_bright);
+}
+
+html {
+    background-color: var(--black);
+}
+
+input.btn.btn-cancel {
+    background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
+    border-color: var(--border_color);
+}
+
+input.btn.btn-cancel:hover {
+    background-image: linear-gradient(var(--blue_light), var(--blue_light));
+    border-color: var(--border_color);
+}
+
+.navbar-inverse {
+    background-image: linear-gradient(#222222, #111111);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: var(--table_head);
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color: var(--table_hover);
+}
+
+.navbar-inverse .navbar-brand {
+    color: var(--table_head);
+}
+
+p {
+    color: var(--text);
+}
+
+.panel-heading {
+    color: var(--purple_bright);
+    background-image: linear-gradient(#111111, #000000);
+}
+
+.panel-heading h3 {
+    color: var(--text);
+    background-image: linear-gradient(#111111, #000000);
+    background-color: var(--black);
+}
+
+.panel-body {
+    background-image: linear-gradient(#222222, #111111);
+}
+
+.selected {
+    background: var(--table_hover);
+}
+
 span.breadcrumb {
     color: var(--blue_light);
+}
+
+.table > tbody > tr > td.separator {
+    color: var(--black);
+}
+
+.table > tbody > tr > td.upgrade {
+    background-color: var(--black);
+}
+
+.table-bordered thead {
+    background-color: var(--black);
+    background-image: linear-gradient(#111111, #000000);
+    color: #000;
+    border-top: 1px solid var(--border_color) !important;
+    border-left: 1px solid var(--border_color);
+    border-right: 1px solid var(--border_color);
+}
+
+.table-bordered > tbody > tr > td {
+    background-color: var(--black);
+}
+
+.table-bordered > thead > tr > th {
+    background-image: linear-gradient(#222222, #111111);
+    color: var(--table_head);
+    border-top: 1px solid var(--border_color) !important;
+    border-left: 1px solid var(--border_color);
+    border-right: 1px solid var(--border_color);
 }
 
 .table-bordered > tbody.topiclist > tr > td {
@@ -305,13 +275,42 @@ span.breadcrumb {
     border-color: var(--border_color);
 }
 
-.table-bordered > thead > tr > th {
-    background-image: linear-gradient(#222222, #111111);
-    border-top: 1px solid var(--border_color) !important;
-    border-left: 1px solid var(--border_color);
-    border-right: 1px solid var(--border_color);
+table thead a {
+    color: var(--table_head);
 }
 
-table thead a, table thead a:hover {
-    color: #00FF00;
+table thead a:hover {
+    color: var(--table_hover);
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td {
+    background-color: var(--black);
+}
+
+.table-striped > tbody > tr:nth-child(even) > td {
+    background-color: #151515;
+}
+
+.table .xmark {
+    color: var(--black);
+}
+
+.table td.left-indent {
+    color: var(--text);
+}
+
+.text-muted {
+    color: var(--purple_bright);
+}
+
+.text-primary {
+    color: var(--text)
+}
+
+.text-warning {
+    color: #F6F637;
+}
+
+#trial-checkbox.checkbox label {
+    color: var(--text);
 }
