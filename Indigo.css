@@ -1,343 +1,317 @@
-/* Hey there! Thanks for buying Cascadea.
-Since it looks like this is your first custom style,
-here's a few tips to get you started.
-
-First, you need to write some CSS code for the site
-you'd like to customize. That's what this handy
-editor is for! I recommend using Safari's Web
-Inspector to check out the layout and stylesheet
-of the website you'd like to modify, so you can
-figure out what you need to customize.
-
-The "Rule Editor" button in the toolbar lets you specify
-which websites your style should apply to. You can
-specify a specific domain name, a specific URL,
-all URLs starting with a specific prefix, or even
-all URLs matching a regular expression.
-
-But what if you need to apply a different block
-of CSS code to different pages, all within a single
-"style"? That's where "sections" come in. Each
-"section" of your style has its own block of CSS,
-as well as its own set of rules. You can add or
-remove sections and switch between them in the
-toolbar up top.
-
-Once you're all done, you can export your style to a
-CSS file from the File menu. Then, you can
-send that file to any other Cascadea user (or even
-users of similar extensions for other browsers), and
-they can use it, too.
-
-Have fun, and make something beautiful! */
+/*
+Custom CSS stylesheet for the Indigo Domotics web site.
+Author: DaveL17
+License: MIT
+*/
 
 :root {
-	--white: #FFFFFF;
-	--black: #000000;
-	--purple_bright: #4F37FF;
-	--blue_light: #4F6EFF;
-	--border_color: #555555;
+    --white: #FFFFFF;
+    --black: #000000;
+    --purple_bright: #4F37FF;
+    --blue_light: #4F6EFF;
+    --border_color: #555555;
+    --text: #888888;
 }
 
 body {
-	background-color: var(--black);
-	background: var(--black);
-	color: #888888;
+    background-color: var(--black);
+    background: var(--black);
+    color: var(--text);
 }
 
 .background {
-	background-color: var(--black);
-	background-image: linear-gradient(#111111, #000000);
+    background-color: var(--black);
+    background-image: linear-gradient(#111111, #000000);
 }
 
 .featurette-heading {
-	color: var(--purple_bright);
-	background-image: linear-gradient(#111111, #000000);
+    color: var(--purple_bright);
+    background-image: linear-gradient(#111111, #000000);
 }
 
 .panel-heading h3 {
-	color: #777777;
-	background-image: linear-gradient(#111111, #000000);
-	background-color: var(--black);
+    color: var(--text);
+    background-image: linear-gradient(#111111, #000000);
+    background-color: var(--black);
 }
 
 .panel-heading {
-	color: var(--purple_bright);
-	background-image: linear-gradient(#111111, #000000);
+    color: var(--purple_bright);
+    background-image: linear-gradient(#111111, #000000);
 }
 
 .panel-body {
-	background-image: linear-gradient(#222222, #111111);
+    background-image: linear-gradient(#222222, #111111);
 }
 
 .text-muted {
-	color: var(--purple_bright);
+    color: var(--purple_bright);
 }
 
 a {
-	color: var(--blue_light);
+    color: var(--blue_light);
 }
 
 a:hover {
-	color: var(--purple_bright);
+    color: var(--purple_bright);
 }
 
 h1 {
-	color: var(--purple_bright);
+    color: var(--purple_bright);
 }
 
 h2 {
-	color: var(--purple_bright);
+    color: var(--purple_bright);
 }
 
 h3 {
-	color: var(--purple_bright);
+    color: var(--purple_bright);
 }
 
 h4 {
-	color: var(--purple_bright);
+    color: var(--purple_bright);
 }
 
 h5 {
-	color: var(--purple_bright);
+    color: var(--purple_bright);
 }
 
 h6 {
-	color: var(--purple_bright);
+    color: var(--purple_bright);
 }
 
 p {
-	color: #888888;
+    color: var(--text);
 }
 
 .btn-primary {
-	background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-	border-color: var(--border_color);
+    background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
+    border-color: var(--border_color);
 }
 
 .btn-primary:hover,
-.btn-group>.btn.active {
-	background-image: linear-gradient(var(--blue_light), var(--blue_light));
-	border-color: var(--border_color);
+.btn-group > .btn.active {
+    background-image: linear-gradient(var(--blue_light), var(--blue_light));
+    border-color: var(--border_color);
 }
 
 .btn-default {
-	background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-	border-color: var(--border_color);
+    background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
+    border-color: var(--border_color);
 }
 
 .btn-default:hover,
 .open .dropdown-toggle.btn-default {
-	background-image: linear-gradient(var(--blue_light), var(--blue_light));
-	border-color: var(--border_color);
+    background-image: linear-gradient(var(--blue_light), var(--blue_light));
+    border-color: var(--border_color);
 }
 
 .btn-small {
-	background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-	border-color: var(--border_color);
+    background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
+    border-color: var(--border_color);
 }
 
 .btn-small:hover,
 .open .dropdown-toggle.btn-small {
-	background-image: linear-gradient(var(--blue_light), var(--blue_light));
-	border-color: var(--border_color);
+    background-image: linear-gradient(var(--blue_light), var(--blue_light));
+    border-color: var(--border_color);
 }
 
 .btn-xsmall {
-	background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-	border-color: var(--border_color);
+    background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
+    border-color: var(--border_color);
 }
 
 .btn-xsmall:hover,
 .open .dropdown-toggle.btn-xsmall {
-	background-image: linear-gradient(var(--blue_light), var(--blue_light));
-	border-color: var(--border_color);
+    background-image: linear-gradient(var(--blue_light), var(--blue_light));
+    border-color: var(--border_color);
 }
 
 input.btn.btn-cancel {
-	background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-	border-color: var(--border_color);
+    background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
+    border-color: var(--border_color);
 }
 
 input.btn.btn-cancel:hover {
-	background-image: linear-gradient(var(--blue_light), var(--blue_light));
-	border-color: var(--border_color);
+    background-image: linear-gradient(var(--blue_light), var(--blue_light));
+    border-color: var(--border_color);
 }
 
 .table-bordered thead {
-	background-color: var(--black);
-	background-image: linear-gradient(#111111, #000000);
-	color: #000;
-	border-top: 1px solid var(--border_color) !important;
-	border-left: 1px solid var(--border_color);
-	border-right: 1px solid var(--border_color);
+    background-color: var(--black);
+    background-image: linear-gradient(#111111, #000000);
+    color: #000;
+    border-top: 1px solid var(--border_color) !important;
+    border-left: 1px solid var(--border_color);
+    border-right: 1px solid var(--border_color);
 }
 
-.table-bordered>tbody>tr>td {
-	background-color: var(--black);
+.table-bordered > tbody > tr > td {
+    background-color: var(--black);
 }
 
-.table-striped>tbody>tr:nth-child(odd)>td {
-	background-color: var(--black);
+.table-striped > tbody > tr:nth-child(odd) > td {
+    background-color: var(--black);
 }
 
-.table-striped>tbody>tr:nth-child(even)>td {
-	background-color: #151515;
+.table-striped > tbody > tr:nth-child(even) > td {
+    background-color: #151515;
 }
 
-.table>tbody>tr>td.upgrade {
-	background-color: var(--black);
+.table > tbody > tr > td.upgrade {
+    background-color: var(--black);
 }
 
 .table .xmark {
-	color: var(--black);
+    color: var(--black);
 }
 
-.table>tbody>tr>td.separator {
-	color: var(--black);
+.table > tbody > tr > td.separator {
+    color: var(--black);
 }
 
 .table td.left-indent {
-	color: #777777;
+    color: var(--text);
 }
 
 html {
-	background-color: var(--black);
+    background-color: var(--black);
 }
 
 #contact-section .panel-heading h3 {
-	color: #555555;
+    color: #555555;
 }
 
 #contact-section .panel-heading {
-	background-image: linear-gradient(#111111, #000000);
+    background-image: linear-gradient(#111111, #000000);
 }
 
 .text-primary {
-	color: #777777
+    color: var(--text)
 }
 
 div.row.topic-filter {
-	background-image: linear-gradient(#111111, #000000);
+    background-image: linear-gradient(#111111, #000000);
 }
 
 .form-control {
-	background-color: #F0F0F0;
+    background-color: #F0F0F0;
 }
 
 .date {
-	color: #777777;
+    color: var(--text);
 }
 
 .selected {
-	background: #ADFA79;
+    background: #ADFA79;
 }
 
 .alert-warning {
-	background-color: #222222;
-	border-color: var(--border_color);
-	color: #FF0000;
+    background-color: #222222;
+    border-color: var(--border_color);
+    color: #FF0000;
 }
 
 .bg-warning {
-	background-color: var(--black);
+    background-color: var(--black);
 }
 
 .text-warning {
-	color: #FFFB00;
+    color: #FFFB00;
 }
 
 .navbar-inverse {
-	background-image: linear-gradient(#222222, #111111);
+    background-image: linear-gradient(#222222, #111111);
 }
 
-.navbar-inverse .navbar-nav>li>a {
-	color: #008800;
+.navbar-inverse .navbar-nav > li > a {
+    color: #008800;
 }
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-	color: #00FF00;
+    color: #00FF00;
 }
 
 .navbar-inverse .navbar-brand {
-	color: #00FF00;
+    color: #00FF00;
 }
 
 div.navbar.navbar-default {
-	background-image: linear-gradient(#222222, #111111);
+    background-image: linear-gradient(#222222, #111111);
 }
 
-.table-bordered>thead>tr>th {
-	background-image: linear-gradient(#222222, #111111);
+.table-bordered > thead > tr > th {
+    background-image: linear-gradient(#222222, #111111);
 }
 
-.table-bordered>thead>tr>th {
-	color: #00FF00;
+.table-bordered > thead > tr > th {
+    color: #00FF00;
 }
 
 .form-group label {
-	color: #999999;
+    color: #999999;
 }
 
 #trial-checkbox.checkbox label {
-	color: #777777;
+    color: var(--text);
 }
 
 .alert-info {
-	background-color: #222222;
-	border-color: var(--border_color);
-	color: #FF0000;
+    background-color: #222222;
+    border-color: var(--border_color);
+    color: #FF0000;
 }
 
 .dropdown-menu {
-	background-color: #111111;
-	border-color: var(--border_color);
+    background-color: #111111;
+    border-color: var(--border_color);
 }
 
 .dropdown-menu .divider {
-	background-color: #222222;
+    background-color: #222222;
 }
 
 div.box {
-	background: #222222;
+    background: #222222;
 }
 
 div.box h3 {
-	background-image: linear-gradient(#222222, #111111);
+    background-image: linear-gradient(#222222, #111111);
 }
 
 div.box p {
-	background-color: #222222;
+    background-color: #222222;
 }
 
 div.postbody div.poster-info {
-	background-color: #333333;
-	border-left: 1px solid var(--border_color);
-	border-bottom: 1px solid var(--border_color);
-	border-top: 1px solid var(--border_color);
-	border-right: 1px solid var(--border_color);
+    background-color: #333333;
+    border-left: 1px solid var(--border_color);
+    border-bottom: 1px solid var(--border_color);
+    border-top: 1px solid var(--border_color);
+    border-right: 1px solid var(--border_color);
 }
 
 div.topic-nav {
-	color: var(--blue_light);
+    color: var(--blue_light);
 }
 
 span.breadcrumb {
-	color: var(--blue_light);
+    color: var(--blue_light);
 }
 
-.table-bordered>tbody.topiclist>tr>td {
-	background-color: var(--black);
-	border-color: var(--border_color);
+.table-bordered > tbody.topiclist > tr > td {
+    background-color: var(--black);
+    border-color: var(--border_color);
 }
 
-.table-bordered>thead>tr>th {
-	background-image: linear-gradient(#222222, #111111);
-	border-top: 1px solid var(--border_color) !important;
-	border-left: 1px solid var(--border_color);
-	border-right: 1px solid var(--border_color);
+.table-bordered > thead > tr > th {
+    background-image: linear-gradient(#222222, #111111);
+    border-top: 1px solid var(--border_color) !important;
+    border-left: 1px solid var(--border_color);
+    border-right: 1px solid var(--border_color);
 }
 
 table thead a, table thead a:hover {
-	color: #00FF00;
+    color: #00FF00;
 }
