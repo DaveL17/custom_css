@@ -6,6 +6,9 @@ License: MIT
 */
 
 :root {
+    --border: #555555;
+    --border_black: #000000;
+    --border: #555555;
     --black: #000000;
     --grey1: #111111;
     --grey2: #222222;
@@ -35,13 +38,13 @@ a:hover {
 
 .alert-info {
     background-color: var(--grey2);
-    border-color: var(--grey5);
+    border-color: var(--border);
     color: var(--alert);
 }
 
 .alert-warning {
     background-color: var(--grey2);
-    border-color: var(--grey5);
+    border-color: var(--border);
     color: var(--alert);
 }
 
@@ -66,7 +69,7 @@ body {
 }
 
 .btn-group-vertical label.btn.btn-toggle, .btn-group label.btn.btn-toggle {
-    border-color: var(--grey2);
+    border-color: var(--border);
     background-color: var(--grey1);
     color: var(--table_head);
 }
@@ -83,46 +86,46 @@ body {
 
 .btn-primary {
     background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-    border-color: var(--grey5);
+    border-color: var(--border);
 }
 
 .btn-primary:hover,
 .btn-group > .btn.active {
     background-image: linear-gradient(var(--blue_light), var(--blue_light));
-    border-color: var(--grey5);
+    border-color: var(--border);
 }
 
 .btn-default {
     background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-    border-color: var(--grey5);
+    border-color: var(--border);
 }
 
 .btn-default:hover,
 .open .dropdown-toggle.btn-default {
     background-image: linear-gradient(var(--blue_light), var(--blue_light));
-    border-color: var(--grey5);
+    border-color: var(--border);
 }
 
 .btn-small {
     background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-    border-color: var(--grey5);
+    border-color: var(--border);
 }
 
 .btn-small:hover,
 .open .dropdown-toggle.btn-small {
     background-image: linear-gradient(var(--blue_light), var(--blue_light));
-    border-color: var(--grey5);
+    border-color: var(--border);
 }
 
 .btn-xsmall {
     background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-    border-color: var(--grey5);
+    border-color: var(--border);
 }
 
 .btn-xsmall:hover,
 .open .dropdown-toggle.btn-xsmall {
     background-image: linear-gradient(var(--blue_light), var(--blue_light));
-    border-color: var(--grey5);
+    border-color: var(--border);
 }
 
 #contact-section .panel-heading h3 {
@@ -139,10 +142,10 @@ body {
 
 .devices .row div.col-sm-2 {
     background-color: var(--black);
-    border-top: 1px solid var(--black);
-    border-left: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
-    border-right: 1px solid var(--black);
+    border-top: 1px solid var(--border_black);
+    border-left: 1px solid var(--border_black);
+    border-bottom: 1px solid var(--border_black);
+    border-right: 1px solid var(--border_black);
 }
 
 .devices .row div.col-sm-2 ul {
@@ -200,7 +203,7 @@ div.dokuwiki code>em {
 
 div.dokuwiki code, div.dokuwiki em>code {
     background-color: var(--grey3);
-    border: 1px dashed var(--grey3);
+    border: 1px dashed var(--border);
     color: var(--grey8);
 }
 
@@ -210,12 +213,12 @@ div.dokuwiki h1 {
 
 div.dokuwiki h2 {
     color: var(--purple_bright);
-    border-color: var(--grey8);
+    border-color: var(--border);
 }
 
 div.dokuwiki h3 {
     color: var(--purple_bright);
-    border-color: var(--grey8);
+    border-color: var(--border);
 }
 
 div.dokuwiki h4 {
@@ -252,14 +255,14 @@ div.dokuwiki #dw__toc .li {
     margin: 0;
     padding-top: 3px;
     padding-bottom: 3px;
-    border-top: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
+    border-top: 1px solid var(--border_black);
+    border-bottom: 1px solid var(--border_black);
 }
 
 div.dokuwiki #dw__toc .li:hover {
     background-color: var(--black);
-    border-top: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
+    border-top: 1px solid var(--border_black);
+    border-bottom: 1px solid var(--border_black);
 }
 
 div.dokuwiki pre.code {
@@ -272,18 +275,18 @@ div.dokuwiki table.inline {
 
 div.dokuwiki table.inline>tbody>tr.row0 {
     background-image: linear-gradient(var(--grey2),var(--grey1));
-    border-top: 1px solid var(--grey5);
-    border-left: 1px solid var(--grey5);
-    border-right: 1px solid var(--grey5);
-    border-bottom: 1px solid var(--grey5);
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 div.dokuwiki table.inline td {
     border: 1px solid var(--black);
-    border-top: 1px solid var(--grey5);
-    border-left: 1px solid var(--grey5);
-    border-right: 1px solid var(--grey5);
-    border-bottom: 1px solid var(--grey5);
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 div.navbar.navbar-default {
@@ -292,6 +295,11 @@ div.navbar.navbar-default {
 
 div.row.topic-filter {
     background-image: linear-gradient(var(--grey1), var(--black));
+    border: 1px solid var(--black);
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 div.box {
@@ -308,10 +316,10 @@ div.box p {
 
 div.postbody div.poster-info {
     background-color: var(--grey3);
-    border-top: 1px solid var(--grey5);
-    border-left: 1px solid var(--grey5);
-    border-right: 1px solid var(--grey5);
-    border-bottom: 1px solid var(--grey5);
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 div.topic-nav {
@@ -324,7 +332,7 @@ div.topic-nav {
 
 .dropdown-menu {
     background-color: var(--grey1);
-    border-color: var(--grey5);
+    border-color: var(--border);
 }
 
 .dropdown-menu .divider {
@@ -407,12 +415,12 @@ background-image: linear-gradient(var(--blue_light), var(--blue_light));
 
 input.btn.btn-cancel {
     background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-    border-color: var(--grey5);
+    border-color: var(--border);
 }
 
 input.btn.btn-cancel:hover {
     background-image: linear-gradient(var(--blue_light), var(--blue_light));
-    border-color: var(--grey5);
+    border-color: var(--border);
 }
 
 .label-success {
@@ -420,7 +428,7 @@ background-color: var(--table_head);
 }
 
 .nav-tabs {
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--border_black);
 }
 
 .navbar-inverse {
@@ -500,53 +508,61 @@ span.breadcrumb {
 }
 
 .support .nav-tabs li.active > a {
-    border-bottom-color: var(--black);
+    border-bottom-color: var(--border_black);
 }
 
 
 .support .nav-tabs li.active > a:hover {
-    border-bottom-color: var(--black);
-    border-top: 1px solid var(--white);
-    border-left: 1px solid var(--white);
-    border-right: 1px solid var(--white);
-    border-bottom: 1px solid var(--white);
+    border-bottom-color: var(--border_black);
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .support .nav-tabs li.active > a {
     background-image: linear-gradient(var(--grey1), var(--black));
     color: var(--table_hover);
-    border-top: 1px solid var(--white);
-    border-left: 1px solid var(--white);
-    border-right: 1px solid var(--white);
-    border-bottom: 1px solid var(--white);
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .support .nav-tabs li > a:hover {
     background-color: var(--grey1);
     border-color: var(--table_hover);
-    border-top: 1px solid var(--white);
-    border-left: 1px solid var(--white);
-    border-right: 1px solid var(--white);
-    border-bottom: 1px solid var(--white);
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .support .tab-content {
     padding-left: 12px;
     background-color: var(--black);
-    border-top: 1px solid var(--white);
-    border-left: 1px solid var(--white);
-    border-right: 1px solid var(--white);
-    border-bottom: 1px solid var(--white);
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+table.table {
+background-color: var(--border);
+}
+
+.table-bordered {
+border: 1px solid var(--border);
 }
 
 .table-bordered thead {
     background-color: var(--black);
     background-image: linear-gradient(var(--grey1), var(--black));
     color: var(--black);
-    border-top: 1px solid var(--grey5) !important;
-    border-left: 1px solid var(--grey5);
-    border-right: 1px solid var(--grey5);
-    border-bottom: 1px solid var(--grey5);
+    border-top: 1px solid var(--border) !important;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .table-bordered > tbody > tr > td {
@@ -555,16 +571,16 @@ span.breadcrumb {
 
 .table-bordered > tbody.topiclist > tr > td {
     background-color: var(--black);
-    border-color: var(--grey5);
+    border-color: var(--border);
 }
 
 .table-bordered > thead > tr > th {
     background-image: linear-gradient(var(--grey2), var(--grey1));
     color: var(--table_head);
-    border-top: 1px solid var(--grey5) !important;
-    border-left: 1px solid var(--grey5);
-    border-right: 1px solid var(--grey5);
-    border-bottom: 1px solid var(--grey5);
+    border-top: 1px solid var(--border) !important;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td {
@@ -599,7 +615,7 @@ table thead a:hover {
     padding: 8px;
     line-height: 1.42857143;
     vertical-align: top;
-    border-top: 1px solid var(--black);
+    border-top: 1px solid var(--border_black);
 }
 
 .table .xmark {
@@ -624,5 +640,5 @@ table thead a:hover {
 
 .well {
     background-color: var(--black);
-    border: 1px solid var(--white);
+    border: 1px solid var(--border);
 }
