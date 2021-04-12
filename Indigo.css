@@ -51,8 +51,8 @@ a:hover {
 }
 
 .badge {
-font-weight: 500;
-color: var(--white);
+    font-weight: 500;
+    color: var(--white);
 }
 
 .bg-warning {
@@ -170,13 +170,38 @@ div#page-body form#postform div.well {
     background-color: var(--black);
 }
 
+div.dokuwiki a.wikilink1 {
+    color: var(--purple_bright) !important;
+}
+
+div.dokuwiki a:link, div.dokuwiki a:visited {
+    color: var(--blue_light);
+}
+
+div.dokuwiki a.urlextern {
+    color: var(--purple_bright);
+}
+
+div.dokuwiki a.urlextern:visited {
+    color: var(--blue_light);
+}
+div.dokuwiki a.urlextern:link, div.dokuwiki a.windows:link, div.dokuwiki a.interwiki:link {
+    color: var(--blue_light);
+}
+
+div.dokuwiki a.urlextern:visited, div.dokuwiki a.windows:visited, div.dokuwiki a.interwiki:visited {
+    color: var(--blue_light);
+}
+
 div.dokuwiki code>em {
-background-color: var(--grey8);
+    background-color: var(--grey3);
+    color: var(--grey8);
 }
 
 div.dokuwiki code, div.dokuwiki em>code {
-    background-color: var(--grey8);
-    border: 1px dashed var(--grey8);
+    background-color: var(--grey3);
+    border: 1px dashed var(--grey3);
+    color: var(--grey8);
 }
 
 div.dokuwiki h1 {
@@ -199,6 +224,10 @@ div.dokuwiki h4 {
 
 div.dokuwiki .li {
     color: var(--grey7);
+}
+
+div.dokuwiki ol {
+    color: var(--grey9);
 }
 
 div.dokuwiki #dw__toc > div {
