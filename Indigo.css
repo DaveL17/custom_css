@@ -1,6 +1,7 @@
 /*
 Custom CSS stylesheet for the Indigo Domotics web site.
 Author: DaveL17
+Version: 1.0
 License: MIT
 */
 
@@ -169,8 +170,35 @@ div#page-body form#postform div.well {
     background-color: var(--black);
 }
 
+div.dokuwiki code>em {
+background-color: var(--grey8);
+}
+
+div.dokuwiki code, div.dokuwiki em>code {
+    background-color: var(--grey8);
+    border: 1px dashed var(--grey8);
+}
+
+div.dokuwiki h1 {
+    color: var(--purple_bright);
+}
+
+div.dokuwiki h2 {
+    color: var(--purple_bright);
+    border-color: var(--grey8);
+}
+
+div.dokuwiki h3 {
+    color: var(--purple_bright);
+    border-color: var(--grey8);
+}
+
+div.dokuwiki h4 {
+    color: var(--purple_bright);
+}
+
 div.dokuwiki .li {
-    color: #777777;
+    color: var(--grey7);
 }
 
 div.dokuwiki #dw__toc > div {
@@ -203,6 +231,30 @@ div.dokuwiki #dw__toc .li:hover {
     background-color: var(--black);
     border-top: 1px solid var(--black);
     border-bottom: 1px solid var(--black);
+}
+
+div.dokuwiki pre.code {
+    background-color: var(--grey7);
+}
+
+div.dokuwiki table.inline {
+    background-color: var(--black);
+}
+
+div.dokuwiki table.inline>tbody>tr.row0 {
+    background-image: linear-gradient(var(--grey2),var(--grey1));
+    border-top: 1px solid var(--grey5);
+    border-left: 1px solid var(--grey5);
+    border-right: 1px solid var(--grey5);
+    border-bottom: 1px solid var(--grey5);
+}
+
+div.dokuwiki table.inline td {
+    border: 1px solid var(--black);
+    border-top: 1px solid var(--grey5);
+    border-left: 1px solid var(--grey5);
+    border-right: 1px solid var(--grey5);
+    border-bottom: 1px solid var(--grey5);
 }
 
 div.navbar.navbar-default {
