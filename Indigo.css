@@ -5,14 +5,22 @@ License: MIT
 */
 
 :root {
-    --alert: #FF0000;
     --black: #000000;
+    --grey1: #111111;
+    --grey2: #222222;
+    --grey3: #333333;
+    --grey4: #444444;
+    --grey5: #555555;
+    --grey6: #666666;
+    --grey7: #777777;
+    --grey8: #888888;
+    --grey9: #999999;
+    --alert: #FF0000;
     --blue_light: #4F6EFF;
-    --border_color: #555555;
     --purple_bright: #5942fc;
     --table_head: #008800;
     --table_hover: #00FF00;
-    --text: #888888;
+    --warning: #F6F637;
     --white: #FFFFFF;
 }
 
@@ -25,20 +33,25 @@ a:hover {
 }
 
 .alert-info {
-    background-color: #222222;
-    border-color: var(--border_color);
+    background-color: var(--grey2);
+    border-color: var(--grey5);
     color: var(--alert);
 }
 
 .alert-warning {
-    background-color: #222222;
-    border-color: var(--border_color);
+    background-color: var(--grey2);
+    border-color: var(--grey5);
     color: var(--alert);
 }
 
 .background {
     background-color: var(--black);
-    background-image: linear-gradient(#111111, #000000);
+    background-image: linear-gradient(var(--grey1), var(--black));
+}
+
+.badge {
+font-weight: 500;
+color: var(--white);
 }
 
 .bg-warning {
@@ -48,67 +61,67 @@ a:hover {
 body {
     background-color: var(--black);
     background: var(--black);
-    color: var(--text);
+    color: var(--grey8);
 }
 
 .btn-group-vertical label.btn.btn-toggle, .btn-group label.btn.btn-toggle {
+    border-color: var(--grey2);
+    background-color: var(--grey1);
     color: var(--table_head);
-    border-color: #222222;
-    background-color: #111111;
 }
 
 .btn-group-vertical label.btn.btn-toggle.active, .btn-group label.btn.btn-toggle.active {
+    background-color: var(--grey2);
     color: var(--table_hover);
-    background-color: #222222;
 }
 
 .btn-group-vertical label.btn.btn-toggle:hover, .btn-group label.btn.btn-toggle:hover {
+    background-color: var(--grey1);
     color: var(--table_head);
-    background-color: #111111;
 }
 
 .btn-primary {
     background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-    border-color: var(--border_color);
+    border-color: var(--grey5);
 }
 
 .btn-primary:hover,
 .btn-group > .btn.active {
     background-image: linear-gradient(var(--blue_light), var(--blue_light));
-    border-color: var(--border_color);
+    border-color: var(--grey5);
 }
 
 .btn-default {
     background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-    border-color: var(--border_color);
+    border-color: var(--grey5);
 }
 
 .btn-default:hover,
 .open .dropdown-toggle.btn-default {
     background-image: linear-gradient(var(--blue_light), var(--blue_light));
-    border-color: var(--border_color);
+    border-color: var(--grey5);
 }
 
 .btn-small {
     background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-    border-color: var(--border_color);
+    border-color: var(--grey5);
 }
 
 .btn-small:hover,
 .open .dropdown-toggle.btn-small {
     background-image: linear-gradient(var(--blue_light), var(--blue_light));
-    border-color: var(--border_color);
+    border-color: var(--grey5);
 }
 
 .btn-xsmall {
     background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-    border-color: var(--border_color);
+    border-color: var(--grey5);
 }
 
 .btn-xsmall:hover,
 .open .dropdown-toggle.btn-xsmall {
     background-image: linear-gradient(var(--blue_light), var(--blue_light));
-    border-color: var(--border_color);
+    border-color: var(--grey5);
 }
 
 #contact-section .panel-heading h3 {
@@ -116,11 +129,11 @@ body {
 }
 
 #contact-section .panel-heading {
-    background-image: linear-gradient(#111111, #000000);
+    background-image: linear-gradient(var(--grey1), var(--black));
 }
 
 .date {
-    color: var(--text);
+    color: var(--grey8);
 }
 
 .devices .row div.col-sm-2 {
@@ -170,8 +183,8 @@ div.dokuwiki #dw__toc a:link, div.dokuwiki #dw__toc a:visited {
 
 div.dokuwiki #dw__toc h3 {
     color: var(--table_head);
-    background-color: #000000;
-    background-image: linear-gradient(#111111, #000000);
+    background-color: var(--black);
+    background-image: linear-gradient(var(--grey1), var(--black));
 }
 
 div.dokuwiki a.wikilink1:hover, div.dokuwiki a.urlextern:hover, div.dokuwiki a:hover {
@@ -193,31 +206,31 @@ div.dokuwiki #dw__toc .li:hover {
 }
 
 div.navbar.navbar-default {
-    background-image: linear-gradient(#222222, #111111);
+    background-image: linear-gradient(var(--grey2), var(--grey1));
 }
 
 div.row.topic-filter {
-    background-image: linear-gradient(#111111, #000000);
+    background-image: linear-gradient(var(--grey1), var(--black));
 }
 
 div.box {
-    background: #222222;
+    background: var(--grey2);
 }
 
 div.box h3 {
-    background-image: linear-gradient(#222222, #111111);
+    background-image: linear-gradient(var(--grey2), var(--grey1));
 }
 
 div.box p {
-    background-color: #222222;
+    background-color: var(--grey2);
 }
 
 div.postbody div.poster-info {
-    background-color: #333333;
-    border-top: 1px solid var(--border_color);
-    border-left: 1px solid var(--border_color);
-    border-right: 1px solid var(--border_color);
-    border-bottom: 1px solid var(--border_color);
+    background-color: var(--grey3);
+    border-top: 1px solid var(--grey5);
+    border-left: 1px solid var(--grey5);
+    border-right: 1px solid var(--grey5);
+    border-bottom: 1px solid var(--grey5);
 }
 
 div.topic-nav {
@@ -229,42 +242,42 @@ div.topic-nav {
 }
 
 .dropdown-menu {
-    background-color: #111111;
-    border-color: var(--border_color);
+    background-color: var(--grey1);
+    border-color: var(--grey5);
 }
 
 .dropdown-menu .divider {
-    background-color: #111111;
+    background-color: var(--grey1);
 }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a {
-    background-color: #111111;
+    background-color: var(--grey1);
+    border-top: 1px solid var(--grey1);
+    border-left: 1px solid var(--grey1);
+    border-right: 1px solid var(--grey1);
+    border-bottom: 1px solid var(--grey1);
     color: var(--table_head);
-    border-top: 1px solid #111111;
-    border-left: 1px solid #111111;
-    border-right: 1px solid #111111;
-    border-bottom: 1px solid #111111;
 }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-    background-color: #111111;
+    background-color: var(--grey1);
+    border-top: 1px solid var(--grey1);
+    border-bottom: 1px solid var(--grey1);
     color: var(--table_hover);
-    border-top: 1px solid #111111;
-    border-bottom: 1px solid #111111;
 }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:hover {
-    background-color: #111111;
+    background-color: var(--grey1);
+    border-top: 1px solid var(--grey1);
+    border-left: 1px solid var(--grey1);
+    border-right: 1px solid var(--grey1);
+    border-bottom: 1px solid var(--grey1);
     color: var(--table_hover);
-    border-top: 1px solid #111111;
-    border-left: 1px solid #111111;
-    border-right: 1px solid #111111;
-    border-bottom: 1px solid #111111;
 }
 
 .featurette-heading {
     color: var(--purple_bright);
-    background-image: linear-gradient(#111111, #000000);
+    background-image: linear-gradient(var(--grey1), var(--black));
 }
 
 .form-control {
@@ -272,7 +285,7 @@ div.topic-nav {
 }
 
 .form-group label {
-    color: #999999;
+    color: var(--grey9);
 }
 
 h1 {
@@ -303,18 +316,34 @@ html {
     background-color: var(--black);
 }
 
+html>body div.dokuwiki input.button {
+background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
+}
+
+html>body div.dokuwiki input.button:hover {
+background-image: linear-gradient(var(--blue_light), var(--blue_light));
+}
+
 input.btn.btn-cancel {
     background-image: linear-gradient(var(--purple_bright), var(--purple_bright));
-    border-color: var(--border_color);
+    border-color: var(--grey5);
 }
 
 input.btn.btn-cancel:hover {
     background-image: linear-gradient(var(--blue_light), var(--blue_light));
-    border-color: var(--border_color);
+    border-color: var(--grey5);
+}
+
+.label-success {
+background-color: var(--table_head);
+}
+
+.nav-tabs {
+    border-bottom: 1px solid var(--black);
 }
 
 .navbar-inverse {
-    background-image: linear-gradient(#222222, #111111);
+    background-image: linear-gradient(var(--grey2), var(--grey1));
     color: var(--table_head)
 }
 
@@ -327,8 +356,8 @@ input.btn.btn-cancel:hover {
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: #111111;
-    background-image: linear-gradient(#222222, #111111);
+    background-color: var(--grey1);
+    background-image: linear-gradient(var(--grey2), var(--grey1));
     color: var(--table_head);
 }
 
@@ -341,7 +370,7 @@ input.btn.btn-cancel:hover {
 }
 
 p {
-    color: var(--text);
+    color: var(--grey8);
 }
 
 .panel {
@@ -349,26 +378,40 @@ p {
 }
 
 .panel-body {
-    background-image: linear-gradient(#222222, #111111);
+    background-image: linear-gradient(var(--grey2), var(--grey1));
 }
 
 .panel-heading {
     color: var(--table_head);
-    background-image: linear-gradient(#111111, #000000);
+    background-image: linear-gradient(var(--grey1), var(--black));
 }
 
 .panel-heading h3 {
-    color: var(--text);
-    background-image: linear-gradient(#111111, #000000);
+    color: var(--grey8);
+    background-image: linear-gradient(var(--grey1), var(--black));
     background-color: var(--black);
 }
 
 .resellers .panel-heading {
-    background-image: linear-gradient(#111111, #000000);
+    background-image: linear-gradient(var(--grey1), var(--black));
+}
+
+#search .box .row {
+    background-color: var(--black);
+    padding: 10px;
+}
+
+#search .box .row .form-group .radio label, #search .box .row .form-group .radio-inline label {
+    color: var(--grey8);
+    font-size: 14px;
 }
 
 .selected {
     background: var(--table_hover);
+}
+
+span.badge {
+    background-color: var(--table_head);
 }
 
 span.breadcrumb {
@@ -389,7 +432,7 @@ span.breadcrumb {
 }
 
 .support .nav-tabs li.active > a {
-    background-image: linear-gradient(#111111, #000000);
+    background-image: linear-gradient(var(--grey1), var(--black));
     color: var(--table_hover);
     border-top: 1px solid var(--white);
     border-left: 1px solid var(--white);
@@ -398,7 +441,7 @@ span.breadcrumb {
 }
 
 .support .nav-tabs li > a:hover {
-    background-color: #111111;
+    background-color: var(--grey1);
     border-color: var(--table_hover);
     border-top: 1px solid var(--white);
     border-left: 1px solid var(--white);
@@ -415,48 +458,32 @@ span.breadcrumb {
     border-bottom: 1px solid var(--white);
 }
 
-.table > tbody > tr > td.separator {
-    color: var(--black);
-}
-
-.table > tbody > tr > td.upgrade {
-    background-color: var(--black);
-}
-
 .table-bordered thead {
     background-color: var(--black);
-    background-image: linear-gradient(#111111, #000000);
-    color: #000000;
-    border-top: 1px solid var(--border_color) !important;
-    border-left: 1px solid var(--border_color);
-    border-right: 1px solid var(--border_color);
-    border-bottom: 1px solid var(--border_color);
+    background-image: linear-gradient(var(--grey1), var(--black));
+    color: var(--black);
+    border-top: 1px solid var(--grey5) !important;
+    border-left: 1px solid var(--grey5);
+    border-right: 1px solid var(--grey5);
+    border-bottom: 1px solid var(--grey5);
 }
 
 .table-bordered > tbody > tr > td {
     background-color: var(--black);
 }
 
-.table-bordered > thead > tr > th {
-    background-image: linear-gradient(#222222, #111111);
-    color: var(--table_head);
-    border-top: 1px solid var(--border_color) !important;
-    border-left: 1px solid var(--border_color);
-    border-right: 1px solid var(--border_color);
-    border-bottom: 1px solid var(--border_color);
-}
-
 .table-bordered > tbody.topiclist > tr > td {
     background-color: var(--black);
-    border-color: var(--border_color);
+    border-color: var(--grey5);
 }
 
-table thead a {
+.table-bordered > thead > tr > th {
+    background-image: linear-gradient(var(--grey2), var(--grey1));
     color: var(--table_head);
-}
-
-table thead a:hover {
-    color: var(--table_hover);
+    border-top: 1px solid var(--grey5) !important;
+    border-left: 1px solid var(--grey5);
+    border-right: 1px solid var(--grey5);
+    border-bottom: 1px solid var(--grey5);
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td {
@@ -467,12 +494,35 @@ table thead a:hover {
     background-color: #151515;
 }
 
-.table .xmark {
+.table > tbody > tr > td.separator {
     color: var(--black);
 }
 
+.table > tbody > tr > td.upgrade {
+    background-color: var(--black);
+}
+
 .table td.left-indent {
-    color: var(--text);
+    color: var(--grey8);
+}
+
+table thead a {
+    color: var(--table_head);
+}
+
+table thead a:hover {
+    color: var(--table_hover);
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid var(--black);
+}
+
+.table .xmark {
+    color: var(--black);
 }
 
 .text-muted {
@@ -480,15 +530,15 @@ table thead a:hover {
 }
 
 .text-primary {
-    color: var(--text)
+    color: var(--grey8)
 }
 
 .text-warning {
-    color: #F6F637;
+    color: var(--warning);
 }
 
 #trial-checkbox.checkbox label {
-    color: var(--text);
+    color: var(--grey8);
 }
 
 .well {
