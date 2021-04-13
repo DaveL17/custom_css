@@ -531,6 +531,14 @@ div.topic-nav {
 	background-image: linear-gradient(var(--grey1), var(--black));
 }
 
+.row.search.post.bg1 {
+    background-color: var(--grey1);
+}
+
+.row.search.post.bg2 {
+    background-color: var(--grey2);
+}
+
 .selected {
 	background: var(--link_local_hover);
 }
