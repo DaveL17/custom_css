@@ -111,7 +111,7 @@ table thead a:hover {
 	color: var(--link_local_hover);
 }
 
-/* DIV Elements*/
+/* DIV Containers*/
 div#page-body form#postform div.well {
 	background-color: var(--black);
 }
@@ -147,7 +147,7 @@ div.dokuwiki code>em {
 
 div.dokuwiki code, div.dokuwiki em>code {
 	background-color: var(--grey3);
-	border: 1px dashed var(--border_medium);
+	border: 1px solid var(--border_medium);
 	color: var(--grey8);
 }
 
@@ -192,13 +192,10 @@ div.dokuwiki #dw__toc h3 {
 }
 
 div.dokuwiki a.wikilink1:hover, div.dokuwiki a.urlextern:hover, div.dokuwiki a:hover {
-	color: var(--link_local_hover) !important;
+	color: var(--link_main_hover) !important;
 }
 
 div.dokuwiki #dw__toc .li {
-	margin: 0;
-	padding-top: 3px;
-	padding-bottom: 3px;
 	border-top: 1px solid var(--border_black);
 	border-bottom: 1px solid var(--border_black);
 }
@@ -368,6 +365,10 @@ div.topic-nav {
 	color: var(--grey8);
 }
 
+.devices .row .col-sm-10 table.table thead {
+	color: var(--link_local);
+}
+
 .devices .row div.col-sm-2 {
 	background-color: var(--black);
 	border-top: 1px solid var(--border_black);
@@ -393,6 +394,10 @@ div.topic-nav {
 	border-bottom: 1px solid var(--link_local);
 }
 
+.devices .row .col-sm-10 table.table thead > tr > th:hover {
+	background-color: var(--link_local_hover);
+}
+
 .devices .row div.col-sm-2 ul li a.subcategory {
 	color: var(--link_local);
 }
@@ -404,7 +409,7 @@ div.topic-nav {
 }
 
 .dropdown-menu .divider {
-	background-color: #555555;
+	background-color: var(--grey5);
 }
 
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a {
@@ -438,7 +443,7 @@ div.topic-nav {
 }
 
 .form-control {
-	background-color: #111111;
+	background-color: var(--grey1);
 	color: var(--white);
 }
 
@@ -627,7 +632,11 @@ div.topic-nav {
 }
 
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	background-color: var(--black);
 	border-top: 1px solid var(--border_black);
+	border-bottom: 1px solid var(--border_black);
+	border-top: 1px solid var(--border_black);
+	border-bottom: 1px solid var(--border_black);
 }
 
 .table .xmark {
@@ -657,16 +666,16 @@ div.topic-nav {
 }
 
 #account-nav.nav-tabs li.active a, #account-nav.nav-tabs li a:hover {
-	background-color: #111111;
+	background-color: var(--grey1);
 	border-top: 1px solid var(--border_medium);
 	border-left: 1px solid var(--border_medium);
 	border-bottom: 1px solid var(--border_medium);
 	border-right: 1px solid var(--border_medium);
-	color: var(--white);
+	color: var(--link_local_hover);
 }
 
 #account-nav.nav-tabs {
-	background-color: #111111;
+	background-color: var(--grey1);
 	border-top: 1px solid var(--border_medium);
 	border-left: 1px solid var(--border_medium);
 	border-bottom: 1px solid var(--border_medium);
@@ -674,7 +683,7 @@ div.topic-nav {
 }
 
 #contact-section .panel-heading h3 {
-	color: #555555;
+	color: var(--grey5);
 }
 
 #contact-section .panel-heading {
@@ -692,7 +701,7 @@ div.topic-nav {
 }
 
 #trial-checkbox.checkbox {
-	color: #111111;
+	color: var(--grey1);
 }
 
 #trial-checkbox.checkbox label {
