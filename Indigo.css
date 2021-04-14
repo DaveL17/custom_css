@@ -536,6 +536,16 @@ div.topic-nav {
 	border-right: 1px dashed var(--grey3);
 }
 
+.postbody div.content dl.codebox {
+	display: block;
+	background-color: #333333;
+	border: 1px solid var(--border_medium);
+}
+
+.postbody div.content dl.codebox dd code {
+    color: white;
+}
+
 .resellers .panel-heading {
 	background-image: linear-gradient(var(--grey1), var(--black));
 }
