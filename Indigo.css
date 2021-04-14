@@ -41,26 +41,11 @@ body {
 	color: var(--grey8);
 }
 
-h1 {
-	color: var(--link_main);
-}
-
-h2 {
-	color: var(--link_main);
-}
-
-h3 {
-	color: var(--link_main);
-}
-
-h4 {
-	color: var(--link_main);
-}
-
-h5 {
-	color: var(--link_main);
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
 	color: var(--link_main);
 }
@@ -128,15 +113,10 @@ div.dokuwiki a.urlextern {
 	color: var(--link_main);
 }
 
-div.dokuwiki a.urlextern:visited {
-	color: var(--link_main_hover);
-}
-
-div.dokuwiki a.urlextern:link, div.dokuwiki a.windows:link, div.dokuwiki a.interwiki:link {
-	color: var(--link_main_hover);
-}
-
-div.dokuwiki a.urlextern:visited, div.dokuwiki a.windows:visited, div.dokuwiki a.interwiki:visited {
+div.dokuwiki a.urlextern:visited,
+div.dokuwiki a.urlextern:link,
+div.dokuwiki a.windows:link,
+div.dokuwiki a.interwiki:link {
 	color: var(--link_main_hover);
 }
 
@@ -151,55 +131,44 @@ div.dokuwiki code, div.dokuwiki em>code {
 	color: var(--grey8);
 }
 
-div.dokuwiki h1 {
-	color: var(--link_main);
-}
-
-div.dokuwiki h2 {
-	color: var(--link_main);
-	border-color: var(--border_medium);
-}
-
-div.dokuwiki h3 {
-	color: var(--link_main);
-	border-color: var(--border_medium);
-}
-
+div.dokuwiki h1,
 div.dokuwiki h4 {
 	color: var(--link_main);
 }
 
-div.dokuwiki .li {
-	color: var(--grey7);
+div.dokuwiki h2,
+div.dokuwiki h3 {
+	border-color: var(--border_medium);
+	color: var(--link_main);
 }
 
+div.dokuwiki .li,
 div.dokuwiki ol {
-	color: var(--grey9);
+	color: var(--grey7);
 }
 
 div.dokuwiki #dw__toc>div {
 	background-color: var(--black);
 }
 
-div.dokuwiki #dw__toc a:link, div.dokuwiki #dw__toc a:visited {
+div.dokuwiki #dw__toc a:link,
+div.dokuwiki #dw__toc a:visited {
 	color: var(--link_local);
 }
 
 div.dokuwiki #dw__toc h3 {
-	color: var(--link_local);
 	background-color: var(--black);
 	background-image: linear-gradient(var(--grey1), var(--black));
+	color: var(--link_local);
 }
 
-div.dokuwiki a.wikilink1:hover, div.dokuwiki a.urlextern:hover, div.dokuwiki a:hover {
+div.dokuwiki a.wikilink1:hover,
+div.dokuwiki a.urlextern:hover,
+div.dokuwiki a:hover {
 	color: var(--link_main_hover) !important;
 }
 
-div.dokuwiki #dw__toc .li {
-	border-top: 1px solid var(--border_black);
-	border-bottom: 1px solid var(--border_black);
-}
-
+div.dokuwiki #dw__toc .li,
 div.dokuwiki #dw__toc .li:hover {
 	background-color: var(--black);
 	border-top: 1px solid var(--border_black);
@@ -214,7 +183,8 @@ div.dokuwiki table.inline {
 	background-color: var(--black);
 }
 
-div.dokuwiki table.inline>tbody>tr.row0 {
+div.dokuwiki table.inline>tbody>tr.row0,
+div.navbar.navbar-default{
 	background-image: linear-gradient(var(--grey2), var(--grey1));
 	border-top: 1px solid var(--border_medium);
 	border-left: 1px solid var(--border_medium);
@@ -224,14 +194,6 @@ div.dokuwiki table.inline>tbody>tr.row0 {
 
 div.dokuwiki table.inline td {
 	border: 1px solid var(--black);
-	border-top: 1px solid var(--border_medium);
-	border-left: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
-}
-
-div.navbar.navbar-default {
-	background-image: linear-gradient(var(--grey2), var(--grey1));
 	border-top: 1px solid var(--border_medium);
 	border-left: 1px solid var(--border_medium);
 	border-right: 1px solid var(--border_medium);
@@ -276,12 +238,7 @@ div.topic-nav {
 }
 
 /* Class Selectors */
-.alert-info {
-	background-color: var(--grey2);
-	border-color: var(--border_medium);
-	color: var(--text_alert);
-}
-
+.alert-info,
 .alert-warning {
 	background-color: var(--grey2);
 	border-color: var(--border_medium);
@@ -294,26 +251,29 @@ div.topic-nav {
 }
 
 .badge {
-	font-weight: 500;
 	color: var(--white);
+	font-weight: 500;
 }
 
 .bg-warning {
 	background-color: var(--black);
 }
 
-.btn-group-vertical label.btn.btn-toggle, .btn-group label.btn.btn-toggle {
+.btn-group-vertical label.btn.btn-toggle,
+.btn-group label.btn.btn-toggle {
 	border-color: var(--border_medium);
 	background-color: var(--grey1);
 	color: var(--link_local);
 }
 
-.btn-group-vertical label.btn.btn-toggle.active, .btn-group label.btn.btn-toggle.active {
+.btn-group-vertical label.btn.btn-toggle.active,
+.btn-group label.btn.btn-toggle.active {
 	background-color: var(--grey2);
 	color: var(--link_local_hover);
 }
 
-.btn-group-vertical label.btn.btn-toggle:hover, .btn-group label.btn.btn-toggle:hover {
+.btn-group-vertical label.btn.btn-toggle:hover,
+.btn-group label.btn.btn-toggle:hover {
 	background-color: var(--grey1);
 	color: var(--link_local);
 }
@@ -387,12 +347,12 @@ div.topic-nav {
 }
 
 .devices .row div.col-sm-2 ul li a:hover {
-	color: var(--link_local_hover);
 	background-color: var(--link_local);
 	border-top: 1px solid var(--link_local);
 	border-left: 1px solid var(--link_local);
 	border-right: 1px solid var(--link_local);
 	border-bottom: 1px solid var(--link_local);
+	color: var(--link_local_hover);
 }
 
 .devices .row .col-sm-10 table.table thead>tr>th:hover {
@@ -403,7 +363,6 @@ div.topic-nav {
 	color: var(--link_local);
 }
 
-
 .dropdown-menu {
 	background-color: var(--grey1);
 	border-color: var(--border_medium);
@@ -413,7 +372,7 @@ div.topic-nav {
 	background-color: var(--grey5);
 }
 
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a {
+.dropdown-menu>li>a {
 	background-color: var(--grey1);
 	border-top: 1px solid var(--grey1);
 	border-left: 1px solid var(--grey1);
@@ -422,14 +381,8 @@ div.topic-nav {
 	color: var(--link_local);
 }
 
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
-	background-color: var(--grey1);
-	border-top: 1px solid var(--grey1);
-	border-bottom: 1px solid var(--grey1);
-	color: var(--link_local_hover);
-}
-
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:hover {
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
 	background-color: var(--grey1);
 	border-top: 1px solid var(--grey1);
 	border-left: 1px solid var(--grey1);
@@ -469,11 +422,14 @@ div.topic-nav {
 	color: var(--link_local);
 }
 
-.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
 	color: var(--link_local_hover);
 }
 
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
 	background-color: var(--grey1);
 	background-image: linear-gradient(var(--grey2), var(--grey1));
 	color: var(--link_local);
@@ -501,10 +457,7 @@ div.topic-nav {
 	border-top-color: var(--border_medium);
 }
 
-.panel-default>.panel-heading h2.panel-title {
-	color: var(--link_main);
-}
-
+.panel-default>.panel-heading h2.panel-title,
 .panel-title-note {
 	color: var(--link_main);
 }
@@ -529,16 +482,15 @@ div.topic-nav {
 }
 
 .postbody div.content blockquote {
-	border-left: 5px solid var(--grey4);
 	background-color: var(--grey3);
+	border-left: 5px solid var(--grey4);
 	border-top: 1px dashed var(--grey3);
 	border-bottom: 1px dashed var(--grey3);
 	border-right: 1px dashed var(--grey3);
 }
 
 .postbody div.content dl.codebox {
-	display: block;
-	background-color: #333333;
+	background-color: var(--grey3);
 	border: 1px solid var(--border_medium);
 }
 
@@ -566,22 +518,22 @@ div.topic-nav {
 	border-bottom-color: var(--border_black);
 }
 
-
 .support .nav-tabs li.active>a:hover {
 	border-bottom-color: var(--border_black);
 	border-top: 1px solid var(--border_medium);
 	border-left: 1px solid var(--border_medium);
 	border-right: 1px solid var(--border_medium);
 	border-bottom: 1px solid var(--border_medium);
+	color: var(--link_main_hover);
 }
 
 .support .nav-tabs li.active>a {
 	background-image: linear-gradient(var(--grey1), var(--black));
-	color: var(--link_local_hover);
 	border-top: 1px solid var(--border_medium);
 	border-left: 1px solid var(--border_medium);
 	border-right: 1px solid var(--border_medium);
 	border-bottom: 1px solid var(--border_medium);
+	color: var(--link_local_hover);
 }
 
 .support .nav-tabs li>a:hover {
@@ -594,7 +546,6 @@ div.topic-nav {
 }
 
 .support .tab-content {
-	padding-left: 12px;
 	background-color: var(--black);
 	border-top: 1px solid var(--border_medium);
 	border-left: 1px solid var(--border_medium);
@@ -634,7 +585,12 @@ div.topic-nav {
 	border-bottom: 1px solid var(--border_medium);
 }
 
-.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+.table-bordered>thead>tr>th,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>tbody>tr>td,
+.table-bordered>tfoot>tr>td {
 	border: 1px solid var(--border_medium);
 }
 
@@ -658,7 +614,12 @@ div.topic-nav {
 	color: var(--grey8);
 }
 
-.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
 	background-color: var(--black);
 	border-top: 1px solid var(--border_black);
 	border-bottom: 1px solid var(--border_black);
@@ -692,7 +653,8 @@ div.topic-nav {
 	color: var(--link_local);
 }
 
-#account-nav.nav-tabs li.active a, #account-nav.nav-tabs li a:hover {
+#account-nav.nav-tabs li.active a,
+#account-nav.nav-tabs li a:hover {
 	background-color: var(--grey1);
 	border-top: 1px solid var(--border_medium);
 	border-left: 1px solid var(--border_medium);
@@ -722,7 +684,8 @@ div.topic-nav {
 	padding: 10px;
 }
 
-#search .box .row .form-group .radio label, #search .box .row .form-group .radio-inline label {
+#search .box .row .form-group .radio label,
+#search .box .row .form-group .radio-inline label {
 	color: var(--grey8);
 	font-size: 14px;
 }
