@@ -6,39 +6,39 @@ License: MIT
 */
 
 :root {
-	--border_black: #000000;
-	--border_medium: #555555;
-	--black: #000000;
-	--grey1: #111111;
-	--grey2: #222222;
-	--grey3: #333333;
-	--grey4: #444444;
-	--grey5: #555555;
-	--grey6: #666666;
-	--grey7: #777777;
-	--grey8: #888888;
-	--grey9: #999999;
-	--link_local: #008800;
-	--link_local_hover: #00FF00;
-	--link_main: #5942fc;
-	--link_main_hover: #4F6EFF;
-	--text_alert: #FF0000;
-	--text_warning: #F6F637;
-	--white: #FFFFFF;
+  --border_black: #000000;
+  --border_medium: #555555;
+  --black: #000000;
+  --grey1: #111111;
+  --grey2: #222222;
+  --grey3: #333333;
+  --grey4: #444444;
+  --grey5: #555555;
+  --grey6: #666666;
+  --grey7: #777777;
+  --grey8: #888888;
+  --grey9: #999999;
+  --link_local: #008800;
+  --link_local_hover: #00FF00;
+  --link_main: #5942fc;
+  --link_main_hover: #4F6EFF;
+  --text_alert: #FF0000;
+  --text_warning: #F6F637;
+  --white: #FFFFFF;
 }
 
 a {
-	color: var(--link_main);
+  color: var(--link_main);
 }
 
 a:hover {
-	color: var(--link_main_hover);
+  color: var(--link_main_hover);
 }
 
 body {
-	background-color: var(--black);
-	background: var(--black);
-	color: var(--grey8);
+  background-color: var(--black);
+  background: var(--black);
+  color: var(--grey8);
 }
 
 h1,
@@ -47,542 +47,551 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--link_main);
+  color: var(--link_main);
 }
 
 html {
-	background-color: var(--black);
+  background-color: var(--black);
 }
 
 html>body div.dokuwiki input.button {
-	background-image: linear-gradient(var(--link_main), var(--link_main));
+  background-image: linear-gradient(var(--link_main), var(--link_main));
 }
 
 html>body div.dokuwiki input.button:hover {
-	background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
+  background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
 }
 
 input.btn.btn-cancel {
-	background-image: linear-gradient(var(--link_main), var(--link_main));
-	border-color: var(--border_medium);
+  background-image: linear-gradient(var(--link_main), var(--link_main));
+  border-color: var(--border_medium);
 }
 
 input.btn.btn-cancel:hover {
-	background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
-	border-color: var(--border_medium);
+  background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
+  border-color: var(--border_medium);
 }
 
 p {
-	color: var(--grey8);
+  color: var(--grey8);
 }
 
 span.badge {
-	background-color: var(--link_local);
+  background-color: var(--link_local);
 }
 
 span.breadcrumb {
-	color: var(--link_main_hover);
+  color: var(--link_main_hover);
 }
 
 table.table {
-	background-color: var(--border_medium);
+  background-color: var(--border_medium);
 }
 
 table thead a {
-	color: var(--link_local);
+  color: var(--link_local);
 }
 
 table thead a:hover {
-	color: var(--link_local_hover);
+  color: var(--link_local_hover);
 }
 
 /* DIV Containers*/
 div#page-body form#postform div.well {
-	background-color: var(--black);
+  background-color: var(--black);
 }
 
 div.dokuwiki a.wikilink1 {
-	color: var(--link_main) !important;
+  color: var(--link_main) !important;
 }
 
 div.dokuwiki a:link, div.dokuwiki a:visited {
-	color: var(--link_main_hover);
+  color: var(--link_main_hover);
 }
 
 div.dokuwiki a.urlextern {
-	color: var(--link_main);
+  color: var(--link_main);
 }
 
 div.dokuwiki a.urlextern:visited,
 div.dokuwiki a.urlextern:link,
 div.dokuwiki a.windows:link,
 div.dokuwiki a.interwiki:link {
-	color: var(--link_main_hover);
+  color: var(--link_main_hover);
 }
 
 div.dokuwiki code>em {
-	background-color: var(--grey3);
-	color: var(--grey8);
+  background-color: var(--grey3);
+  color: var(--grey8);
 }
 
 div.dokuwiki code, div.dokuwiki em>code {
-	background-color: var(--grey3);
-	border: 1px solid var(--border_medium);
-	color: var(--grey8);
+  background-color: var(--grey3);
+  border: 1px solid var(--border_medium);
+  color: var(--grey8);
 }
 
 div.dokuwiki h1,
 div.dokuwiki h4 {
-	color: var(--link_main);
+  color: var(--link_main);
 }
 
 div.dokuwiki h2,
 div.dokuwiki h3 {
-	border-color: var(--border_medium);
-	color: var(--link_main);
+  border-color: var(--border_medium);
+  color: var(--link_main);
 }
 
 div.dokuwiki .li,
 div.dokuwiki ol {
-	color: var(--grey7);
+  color: var(--grey7);
 }
 
 div.dokuwiki #dw__toc>div {
-	background-color: var(--black);
+  background-color: var(--black);
 }
 
 div.dokuwiki #dw__toc a:link,
 div.dokuwiki #dw__toc a:visited {
-	color: var(--link_local);
+  color: var(--link_local);
 }
 
 div.dokuwiki #dw__toc h3 {
-	background-color: var(--black);
-	background-image: linear-gradient(var(--grey1), var(--black));
-	color: var(--link_local);
+  background-color: var(--black);
+  background-image: linear-gradient(var(--grey1), var(--black));
+  color: var(--link_local);
 }
 
 div.dokuwiki a.wikilink1:hover,
 div.dokuwiki a.urlextern:hover,
 div.dokuwiki a:hover {
-	color: var(--link_main_hover) !important;
+  color: var(--link_main_hover) !important;
 }
 
 div.dokuwiki #dw__toc .li,
 div.dokuwiki #dw__toc .li:hover {
-	background-color: var(--black);
-	border-top: 1px solid var(--border_black);
-	border-bottom: 1px solid var(--border_black);
+  background-color: var(--black);
+  border-top: 1px solid var(--border_black);
+  border-bottom: 1px solid var(--border_black);
 }
 
 div.dokuwiki pre.code {
-	background-color: var(--grey7);
+  background-color: var(--grey7);
 }
 
 div.dokuwiki table.inline {
-	background-color: var(--black);
+  background-color: var(--black);
 }
 
 div.dokuwiki table.inline>tbody>tr.row0,
 div.navbar.navbar-default{
-	background-image: linear-gradient(var(--grey2), var(--grey1));
-	border-top: 1px solid var(--border_medium);
-	border-left: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
+  background-image: linear-gradient(var(--grey2), var(--grey1));
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 div.dokuwiki table.inline td {
-	border: 1px solid var(--black);
-	border-top: 1px solid var(--border_medium);
-	border-left: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
+  border: 1px solid var(--black);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 div.row.topic-filter {
-	background-image: linear-gradient(var(--grey1), var(--black));
-	border: 1px solid var(--black);
-	border-top: 1px solid var(--border_medium);
-	border-left: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
+  background-image: linear-gradient(var(--grey1), var(--black));
+  border: 1px solid var(--black);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 div.box {
-	background: var(--grey2);
+  background: var(--grey2);
 }
 
 div.box h3 {
-	background-image: linear-gradient(var(--grey2), var(--grey1));
+  background-image: linear-gradient(var(--grey2), var(--grey1));
 }
 
 div.box p {
-	background-color: var(--grey2);
+  background-color: var(--grey2);
 }
 
 div.postbody div.poster-info {
-	background-color: var(--grey3);
-	border-top: 1px solid var(--border_medium);
-	border-left: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
+  background-color: var(--grey3);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 div.topic-nav {
-	color: var(--link_main_hover);
+  color: var(--link_main_hover);
 }
 
 .dropdown-header {
-	color: var(--white);
+  color: var(--white);
 }
 
 /* Class Selectors */
 .alert-info,
 .alert-warning {
-	background-color: var(--grey2);
-	border-color: var(--border_medium);
-	color: var(--text_alert);
+  background-color: var(--grey2);
+  border-color: var(--border_medium);
+  color: var(--text_alert);
 }
 
 .background {
-	background-color: var(--black);
-	background-image: linear-gradient(var(--grey1), var(--black));
+  background-color: var(--black);
+  background-image: linear-gradient(var(--grey1), var(--black));
 }
 
 .badge {
-	color: var(--white);
-	font-weight: 500;
+  color: var(--white);
+  font-weight: 500;
 }
 
 .bg-warning {
-	background-color: var(--black);
+  background-color: var(--black);
 }
 
 .btn-group-vertical label.btn.btn-toggle,
 .btn-group label.btn.btn-toggle {
-	border-color: var(--border_medium);
-	background-color: var(--grey1);
-	color: var(--link_local);
+  border-color: var(--border_medium);
+  background-color: var(--grey1);
+  color: var(--link_local);
 }
 
 .btn-group-vertical label.btn.btn-toggle.active,
 .btn-group label.btn.btn-toggle.active {
-	background-color: var(--grey2);
-	color: var(--link_local_hover);
+  background-color: var(--grey2);
+  color: var(--link_local_hover);
 }
 
 .btn-group-vertical label.btn.btn-toggle:hover,
 .btn-group label.btn.btn-toggle:hover {
-	background-color: var(--grey1);
-	color: var(--link_local);
+  background-color: var(--grey1);
+  color: var(--link_local);
 }
 
 .btn-primary {
-	background-image: linear-gradient(var(--link_main), var(--link_main));
-	border-color: var(--border_medium);
+  background-image: linear-gradient(var(--link_main), var(--link_main));
+  border-color: var(--border_medium);
 }
 
 .btn-primary:hover,
 .btn-group>.btn.active {
-	background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
-	border-color: var(--border_medium);
+  background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
+  border-color: var(--border_medium);
 }
 
 .btn-default {
-	background-image: linear-gradient(var(--link_main), var(--link_main));
-	border-color: var(--border_medium);
+  background-image: linear-gradient(var(--link_main), var(--link_main));
+  border-color: var(--border_medium);
 }
 
 .btn-default:hover,
 .open .dropdown-toggle.btn-default {
-	background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
-	border-color: var(--border_medium);
+  background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
+  border-color: var(--border_medium);
 }
 
 .btn-small {
-	background-image: linear-gradient(var(--link_main), var(--link_main));
-	border-color: var(--border_medium);
+  background-image: linear-gradient(var(--link_main), var(--link_main));
+  border-color: var(--border_medium);
 }
 
 .btn-small:hover,
 .open .dropdown-toggle.btn-small {
-	background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
-	border-color: var(--border_medium);
+  background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
+  border-color: var(--border_medium);
 }
 
 .btn-xsmall {
-	background-image: linear-gradient(var(--link_main), var(--link_main));
-	border-color: var(--border_medium);
+  background-image: linear-gradient(var(--link_main), var(--link_main));
+  border-color: var(--border_medium);
 }
 
 .btn-xsmall:hover,
 .open .dropdown-toggle.btn-xsmall {
-	background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
-	border-color: var(--border_medium);
+  background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
+  border-color: var(--border_medium);
 }
 
 .date {
-	color: var(--grey8);
+  color: var(--grey8);
 }
 
 .devices .row .col-sm-10 table.table thead {
-	color: var(--link_local);
+  color: var(--link_local);
 }
 
 .devices .row div.col-sm-2 {
-	background-color: var(--black);
-	border-top: 1px solid var(--border_black);
-	border-left: 1px solid var(--border_black);
-	border-bottom: 1px solid var(--border_black);
-	border-right: 1px solid var(--border_black);
+  background-color: var(--black);
+  border-top: 1px solid var(--border_black);
+  border-left: 1px solid var(--border_black);
+  border-bottom: 1px solid var(--border_black);
+  border-right: 1px solid var(--border_black);
 }
 
 .devices .row div.col-sm-2 ul {
-	background-color: var(--black);
+  background-color: var(--black);
 }
 
 .devices .row div.col-sm-2 ul li a {
-	color: var(--link_local);
+  color: var(--link_local);
 }
 
 .devices .row div.col-sm-2 ul li a:hover {
-	background-color: var(--link_local);
-	border-top: 1px solid var(--link_local);
-	border-left: 1px solid var(--link_local);
-	border-right: 1px solid var(--link_local);
-	border-bottom: 1px solid var(--link_local);
-	color: var(--link_local_hover);
+  background-color: var(--link_local);
+  border-top: 1px solid var(--link_local);
+  border-left: 1px solid var(--link_local);
+  border-right: 1px solid var(--link_local);
+  border-bottom: 1px solid var(--link_local);
+  color: var(--link_local_hover);
 }
 
 .devices .row .col-sm-10 table.table thead>tr>th:hover {
-	background-color: var(--link_local_hover);
+  background-color: var(--link_local_hover);
 }
 
 .devices .row div.col-sm-2 ul li a.subcategory {
-	color: var(--link_local);
+  color: var(--link_local);
 }
 
 .dropdown-menu {
-	background-color: var(--grey1);
-	border-color: var(--border_medium);
+  background-color: var(--grey1);
+  border-color: var(--border_medium);
 }
 
 .dropdown-menu .divider {
-	background-color: var(--grey5);
+  background-color: var(--grey5);
 }
 
 .dropdown-menu>li>a {
-	background-color: var(--grey1);
-	border-top: 1px solid var(--grey1);
-	border-left: 1px solid var(--grey1);
-	border-right: 1px solid var(--grey1);
-	border-bottom: 1px solid var(--grey1);
-	color: var(--link_local);
+  background-color: var(--grey1);
+  border-top: 1px solid var(--grey1);
+  border-left: 1px solid var(--grey1);
+  border-right: 1px solid var(--grey1);
+  border-bottom: 1px solid var(--grey1);
+  color: var(--link_local);
 }
 
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
-	background-color: var(--grey1);
-	border-top: 1px solid var(--grey1);
-	border-left: 1px solid var(--grey1);
-	border-right: 1px solid var(--grey1);
-	border-bottom: 1px solid var(--grey1);
-	color: var(--link_local_hover);
+  background-color: var(--grey1);
+  border-top: 1px solid var(--grey1);
+  border-left: 1px solid var(--grey1);
+  border-right: 1px solid var(--grey1);
+  border-bottom: 1px solid var(--grey1);
+  color: var(--link_local_hover);
 }
 
 .featurette-heading {
-	color: var(--link_main);
-	background-image: linear-gradient(var(--grey1), var(--black));
+  color: var(--link_main);
+  background-image: linear-gradient(var(--grey1), var(--black));
 }
 
 .form-control {
-	background-color: var(--grey1);
-	color: var(--white);
+  background-color: var(--grey1);
+  color: var(--white);
 }
 
 .form-group label {
-	color: var(--grey9);
+  color: var(--grey9);
 }
 
 .label-success {
-	background-color: var(--link_local);
+  background-color: var(--link_local);
 }
 
 .nav-tabs {
-	border-bottom: 1px solid var(--border_black);
+  border-bottom: 1px solid var(--border_black);
 }
 
 .navbar-inverse {
-	background-image: linear-gradient(var(--grey2), var(--grey1));
-	color: var(--link_local)
+  background-image: linear-gradient(var(--grey2), var(--grey1));
+  color: var(--link_local)
 }
 
 .navbar-inverse .navbar-brand {
-	color: var(--link_local);
+  color: var(--link_local);
 }
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-	color: var(--link_local_hover);
+  color: var(--link_local_hover);
 }
 
 .navbar-inverse .navbar-nav>.open>a,
 .navbar-inverse .navbar-nav>.open>a:hover,
 .navbar-inverse .navbar-nav>.open>a:focus {
-	background-color: var(--grey1);
-	background-image: linear-gradient(var(--grey2), var(--grey1));
-	color: var(--link_local);
+  background-color: var(--grey1);
+  background-image: linear-gradient(var(--grey2), var(--grey1));
+  color: var(--link_local);
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	color: var(--link_local);
+  color: var(--link_local);
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-	color: var(--link_local_hover);
+  color: var(--link_local_hover);
 }
 
 .panel {
-	background-color: var(--black);
-	border-color: var(--border_medium);
+  background-color: var(--black);
+  border-color: var(--border_medium);
 }
 
 .panel-default>.panel-heading {
-	border-color: var(--border_medium);
-	background-image: linear-gradient(var(--grey2), var(--grey1));
+  border-color: var(--border_medium);
+  background-image: linear-gradient(var(--grey2), var(--grey1));
 }
 
 .panel-default>.panel-heading+.panel-collapse .panel-body {
-	border-top-color: var(--border_medium);
+  border-top-color: var(--border_medium);
 }
 
 .panel-default>.panel-heading h2.panel-title,
 .panel-title-note {
-	color: var(--link_main);
+  color: var(--link_main);
 }
 
 .panel-title-note:hover {
-	color: var(--link_main_hover);
+  color: var(--link_main_hover);
 }
 
 .panel-body {
-	background-image: linear-gradient(var(--black), var(--black));
+  background-image: linear-gradient(var(--black), var(--black));
 }
 
 .panel-heading {
-	color: var(--link_local);
-	background-image: linear-gradient(var(--grey1), var(--black));
+  color: var(--link_local);
+  background-image: linear-gradient(var(--grey1), var(--black));
 }
 
 .panel-heading h3 {
-	color: var(--grey8);
-	background-image: linear-gradient(var(--grey1), var(--black));
-	background-color: var(--black);
+  color: var(--grey8);
+  background-image: linear-gradient(var(--grey1), var(--black));
+  background-color: var(--black);
 }
 
+.postbody dl.attachbox dd dl.file {
+  background-color: var(--grey3);
+  border-left: 2px solid var(--grey4);
+  border-top: 2px solid var(--grey4);
+  border-bottom: 2px solid var(--grey4);
+  border-right: 2px solid var(--grey4);
+}
+
+.postbody div.content blockquote.cited,
 .postbody div.content blockquote {
-	background-color: var(--grey3);
-	border-left: 5px solid var(--grey4);
-	border-top: 1px dashed var(--grey3);
-	border-bottom: 1px dashed var(--grey3);
-	border-right: 1px dashed var(--grey3);
+  background-color: var(--grey3);
+  border-left: 5px solid var(--grey4);
+  border-top: 1px solid var(--grey3);
+  border-bottom: 1px solid var(--grey3);
+  border-right: 1px solid var(--grey3);
 }
 
 .postbody div.content dl.codebox {
-	background-color: var(--grey3);
-	border: 1px solid var(--border_medium);
+  background-color: var(--grey3);
+  border: 1px solid var(--border_medium);
 }
 
 .postbody div.content dl.codebox dd code {
-    color: white;
+  color: white;
 }
 
 .resellers .panel-heading {
-	background-image: linear-gradient(var(--grey1), var(--black));
+  background-image: linear-gradient(var(--grey1), var(--black));
 }
 
 .row.search.post.bg1 {
-	background-color: var(--grey1);
+  background-color: var(--grey1);
 }
 
 .row.search.post.bg2 {
-	background-color: var(--grey2);
+  background-color: var(--grey2);
 }
 
 .selected {
-	background: var(--link_local_hover);
+  background: var(--link_local_hover);
 }
 
 .support .nav-tabs li.active>a {
-	border-bottom-color: var(--border_black);
+  border-bottom-color: var(--border_black);
 }
 
 .support .nav-tabs li.active>a:hover {
-	border-bottom-color: var(--border_black);
-	border-top: 1px solid var(--border_medium);
-	border-left: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
-	color: var(--link_main_hover);
+  border-bottom-color: var(--border_black);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
+  color: var(--link_main_hover);
 }
 
 .support .nav-tabs li.active>a {
-	background-image: linear-gradient(var(--grey1), var(--black));
-	border-top: 1px solid var(--border_medium);
-	border-left: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
-	color: var(--link_local_hover);
+  background-image: linear-gradient(var(--grey1), var(--black));
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
+  color: var(--link_local_hover);
 }
 
 .support .nav-tabs li>a:hover {
-	background-color: var(--grey1);
-	border-color: var(--link_local_hover);
-	border-top: 1px solid var(--border_medium);
-	border-left: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
+  background-color: var(--grey1);
+  border-color: var(--link_local_hover);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 .support .tab-content {
-	background-color: var(--black);
-	border-top: 1px solid var(--border_medium);
-	border-left: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
+  background-color: var(--black);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 .table-bordered {
-	border: 1px solid var(--border_medium);
+  border: 1px solid var(--border_medium);
 }
 
 .table-bordered thead {
-	background-color: var(--black);
-	background-image: linear-gradient(var(--grey1), var(--black));
-	color: var(--black);
-	border-top: 1px solid var(--border_medium) !important;
-	border-left: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
+  background-color: var(--black);
+  background-image: linear-gradient(var(--grey1), var(--black));
+  color: var(--black);
+  border-top: 1px solid var(--border_medium) !important;
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 .table-bordered>tbody>tr>td {
-	background-color: var(--black);
+  background-color: var(--black);
 }
 
 .table-bordered>tbody.topiclist>tr>td {
-	background-color: var(--black);
-	border-color: var(--border_medium);
+  background-color: var(--black);
+  border-color: var(--border_medium);
 }
 
 .table-bordered>thead>tr>th {
-	background-image: linear-gradient(var(--grey2), var(--grey1));
-	color: var(--link_local);
-	border-top: 1px solid var(--border_medium) !important;
-	border-left: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
+  background-image: linear-gradient(var(--grey2), var(--grey1));
+  color: var(--link_local);
+  border-top: 1px solid var(--border_medium) !important;
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 .table-bordered>thead>tr>th,
@@ -591,27 +600,27 @@ div.topic-nav {
 .table-bordered>thead>tr>td,
 .table-bordered>tbody>tr>td,
 .table-bordered>tfoot>tr>td {
-	border: 1px solid var(--border_medium);
+  border: 1px solid var(--border_medium);
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td {
-	background-color: var(--black);
+  background-color: var(--black);
 }
 
 .table-striped>tbody>tr:nth-child(even)>td {
-	background-color: #151515;
+  background-color: #151515;
 }
 
 .table>tbody>tr>td.separator {
-	color: var(--black);
+  color: var(--black);
 }
 
 .table>tbody>tr>td.upgrade {
-	background-color: var(--black);
+  background-color: var(--black);
 }
 
 .table td.left-indent {
-	color: var(--grey8);
+  color: var(--grey8);
 }
 
 .table>thead>tr>th,
@@ -620,80 +629,80 @@ div.topic-nav {
 .table>thead>tr>td,
 .table>tbody>tr>td,
 .table>tfoot>tr>td {
-	background-color: var(--black);
-	border-top: 1px solid var(--border_black);
-	border-bottom: 1px solid var(--border_black);
-	border-top: 1px solid var(--border_black);
-	border-bottom: 1px solid var(--border_black);
+  background-color: var(--black);
+  border-top: 1px solid var(--border_black);
+  border-bottom: 1px solid var(--border_black);
+  border-top: 1px solid var(--border_black);
+  border-bottom: 1px solid var(--border_black);
 }
 
 .table .xmark {
-	color: var(--black);
+  color: var(--black);
 }
 
 .text-muted {
-	color: var(--link_main);
+  color: var(--link_main);
 }
 
 .text-primary {
-	color: var(--grey8)
+  color: var(--grey8)
 }
 
 .text-warning {
-	color: var(--text_warning);
+  color: var(--text_warning);
 }
 
 .well {
-	background-color: var(--black);
-	border: 1px solid var(--border_medium);
+  background-color: var(--black);
+  border: 1px solid var(--border_medium);
 }
 
 /* ID Selectors */
 #account-nav.nav-tabs li a {
-	color: var(--link_local);
+  color: var(--link_local);
 }
 
 #account-nav.nav-tabs li.active a,
 #account-nav.nav-tabs li a:hover {
-	background-color: var(--grey1);
-	border-top: 1px solid var(--border_medium);
-	border-left: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
-	color: var(--link_local_hover);
+  background-color: var(--grey1);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  color: var(--link_local_hover);
 }
 
 #account-nav.nav-tabs {
-	background-color: var(--grey1);
-	border-top: 1px solid var(--border_medium);
-	border-left: 1px solid var(--border_medium);
-	border-bottom: 1px solid var(--border_medium);
-	border-right: 1px solid var(--border_medium);
+  background-color: var(--grey1);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
 }
 
 #contact-section .panel-heading h3 {
-	color: var(--grey5);
+  color: var(--grey5);
 }
 
 #contact-section .panel-heading {
-	background-image: linear-gradient(var(--grey1), var(--black));
+  background-image: linear-gradient(var(--grey1), var(--black));
 }
 
 #search .box .row {
-	background-color: var(--black);
-	padding: 10px;
+  background-color: var(--black);
+  padding: 10px;
 }
 
 #search .box .row .form-group .radio label,
 #search .box .row .form-group .radio-inline label {
-	color: var(--grey8);
-	font-size: 14px;
+  color: var(--grey8);
+  font-size: 14px;
 }
 
 #trial-checkbox.checkbox {
-	color: var(--grey1);
+  color: var(--grey1);
 }
 
 #trial-checkbox.checkbox label {
-	color: var(--grey8);
+  color: var(--grey8);
 }
