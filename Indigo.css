@@ -233,16 +233,31 @@ div.topic-nav {
   color: var(--link_main_hover);
 }
 
+pre {
+  background-color: var(--grey1);
+}
+
 .dropdown-header {
   color: var(--white);
 }
 
 /* Class Selectors */
-.alert-info,
+.alert-info {
+  background-color: var(--grey2);
+  border-color: var(--border_medium);
+  color: yellow;
+}
+
 .alert-warning {
   background-color: var(--grey2);
   border-color: var(--border_medium);
   color: var(--text_alert);
+}
+
+.alert-success {
+  background-color: var(--grey2);
+  border-color: var(--border_medium);
+  color: #00FF00;
 }
 
 .background {
@@ -401,6 +416,9 @@ div.topic-nav {
   color: var(--white);
 }
 
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+background-color: var(--grey9);
+}
 .form-group label {
   color: var(--grey9);
 }
