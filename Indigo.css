@@ -106,19 +106,34 @@ table thead a:hover {
   color: var(--link_local_hover);
 }
 
-table.sortable thead {
-background-image: linear-gradient(var(--grey2), var(--grey1));
-border-top-color: var(--border_medium);
-border-left-color: var(--border_medium);
-border-right-color: var(--border_medium);
-border-bottom-color: var(--border_medium);
+table.sortable span.reversed {
+  border-color: transparent transparent var(--link_main) transparent;
 }
+
+table.sortable span.reversed.up {
+  border-color: var(--link_main) transparent transparent transparent;
+}
+
+table.sortable span.sign {
+ color: var(--link_main_hover);
+}
+
+table.sortable thead {
+  background-image: linear-gradient(var(--grey2), var(--grey1));
+  border-top-color: 0px var(--border_medium);
+  border-left-color: 0px var(--border_medium);
+  border-right-color: 0px var(--border_medium);
+  border-bottom-color: 0px var(--border_medium);
+  color: var(--link_main)
+}
+
 table.sortable thead th:hover:not([data-defaultsort=disabled]) {
-background-image: linear-gradient(var(--grey3), var(--grey2));
-border-top-color: var(--border_medium);
-border-left-color: var(--border_medium);
-border-right-color: var(--border_medium);
-border-bottom-color: var(--border_medium);
+  background-image: linear-gradient(var(--grey3), var(--grey2));
+  border-top-color: 0px var(--border_medium);
+  border-left-color: 0px var(--border_medium);
+  border-right-color: 0px var(--border_medium);
+  border-bottom-color: 0px var(--border_medium);
+  color: var(--link_main_hover)
 }
 
 /* DIV Containers*/
@@ -722,19 +737,29 @@ pre {
 }
 
 .table.table-bordered.table-striped.sortable {
+  color: var(--link_main);
   border-top: 1px solid var(--border_medium) !important;
-  border-left: 1px solid var(--border_medium);
-  border-right: 1px solid var(--border_medium);
-  border-bottom: 1px solid var(--border_medium);
+  border-left: 0px solid var(--border_medium);
+  border-right: 0px solid var(--border_medium);
+  border-bottom: 0px solid var(--border_medium);
 }
 
 .table-bordered>thead>tr>th {
   background-image: linear-gradient(var(--grey2), var(--grey1));
-  color: var(--link_local);
+  color: var(--link_main);
   border-top: 1px solid var(--border_medium) !important;
-  border-left: 1px solid var(--border_medium);
-  border-right: 1px solid var(--border_medium);
-  border-bottom: 1px solid var(--border_medium);
+  border-left: 0px solid var(--border_medium);
+  border-right: 0px solid var(--border_medium);
+  border-bottom: 0px solid var(--border_medium);
+}
+
+.table-bordered>thead>tr>th:hover {
+  background-image: linear-gradient(var(--grey3), var(--grey2));
+  color: var(--link_main_hover);
+  border-top: 1px solid var(--border_medium) !important;
+  border-left: 0px solid var(--border_medium);
+  border-right: 0px solid var(--border_medium);
+  border-bottom: 0px solid var(--border_medium);
 }
 
 .table-bordered>thead>tr>th,
