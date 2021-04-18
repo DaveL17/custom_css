@@ -76,6 +76,16 @@ p {
   color: var(--grey8);
 }
 
+.plugin-detail-tabs > ul > li.active > a {
+  background-color: var(--grey2);
+  background-image: linear-gradient(var(--grey2), var(--grey1));
+  color: var(--link_main);
+  border-top-color: var(--border_medium);
+  border-left-color: var(--border_medium);
+  border-right-color: var(--border_medium);
+  border-bottom-color: var(--border_medium);
+}
+
 span.badge {
   background-color: var(--link_local);
 }
@@ -96,9 +106,37 @@ table thead a:hover {
   color: var(--link_local_hover);
 }
 
+table.sortable thead {
+background-image: linear-gradient(var(--grey2), var(--grey1));
+border-top-color: var(--border_medium);
+border-left-color: var(--border_medium);
+border-right-color: var(--border_medium);
+border-bottom-color: var(--border_medium);
+}
+table.sortable thead th:hover:not([data-defaultsort=disabled]) {
+background-image: linear-gradient(var(--grey3), var(--grey2));
+border-top-color: var(--border_medium);
+border-left-color: var(--border_medium);
+border-right-color: var(--border_medium);
+border-bottom-color: var(--border_medium);
+}
+
 /* DIV Containers*/
+div.cheatsheet h2,
+div.cheatsheet h3 {
+  color: #00FF00;
+}
+
 div#page-body form#postform div.well {
   background-color: var(--black);
+}
+
+div#details.tab-pane.active {
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
+  color: var(--link_main_hover)
 }
 
 div.dokuwiki a.wikilink1 {
@@ -200,9 +238,37 @@ div.dokuwiki table.inline td {
   border-bottom: 1px solid var(--border_medium);
 }
 
+div#plugin-detail-tabs-content {
+  border-right: 1px solid var(--grey2);
+  border-bottom: 1px solid var(--grey2);
+  border-left: 1px solid var(--grey2);
+  background: var(--grey2);
+}
+
+div#releases.tab-pane.active > div#accordion > div > div#headingOne > a > table,
+div#controllers.tab-pane.active > div#accordion > div > div#headingOne > a > table,
+div#devices.tab-pane.active > div#accordion > div > div#headingOne > a > table {
+  color: var(--grey8);
+  background-color: var(--grey2);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
+}
+
+div#releases.tab-pane.active > div#accordion > div > div#headingOne > a > table > tbody > tr > td,
+div#controllers.tab-pane.active > div#accordion > div > div#headingOne > a > table > tbody > tr > td,
+div#devices.tab-pane.active > div#accordion > div > div#headingOne > a > table > tbody > tr > td {
+  color: var(--grey8);
+  background-color: var(--grey2);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
+}
+
 div.row.topic-filter {
   background-image: linear-gradient(var(--grey1), var(--black));
-  border: 1px solid var(--black);
   border-top: 1px solid var(--border_medium);
   border-left: 1px solid var(--border_medium);
   border-right: 1px solid var(--border_medium);
@@ -406,6 +472,10 @@ pre {
   color: var(--link_local_hover);
 }
 
+.features-grid div.panel-body .cell-label {
+  color: #00FF00;
+}
+
 .featurette-heading {
   color: var(--link_main);
   background-image: linear-gradient(var(--grey1), var(--black));
@@ -417,7 +487,7 @@ pre {
 }
 
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
-background-color: var(--grey9);
+  background-color: var(--grey9);
 }
 .form-group label {
   color: var(--grey9);
@@ -428,21 +498,49 @@ background-color: var(--grey9);
 }
 
 .nav-tabs {
-  border-bottom: 1px solid var(--border_black);
+  border-bottom: 1px solid var(--border_medium);
+  border-top-color: var(--border_medium);
+  border-left-color: var(--border_medium);
+  border-right-color: var(--border_medium);
+  border-bottom-color: var(--border_medium);
+}
+
+.nav-tabs > li a {
+  border-top-color: var(--border_medium);
+  border-left-color: var(--border_medium);
+  border-right-color: var(--border_medium);
+  border-bottom-color: var(--border_medium);
+  color: var(--link_main);
+}
+
+.nav-tabs > li a:hover {
+  border-top-color: var(--border_medium);
+  border-left-color: var(--border_medium);
+  border-right-color: var(--border_medium);
+  border-bottom-color: var(--border_medium);
+  color: var(--link_main_hover);
+}
+
+.nav-tabs > li.active a, .nav-tabs > li.active a:hover {
+  border-bottom-color: var(--border_medium);
+  border-left-color: var(--border_medium);
+  border-top-color: var(--border_medium);
+  border-right-color: var(--border_medium);
+  color: var(--link_main_hover);
 }
 
 .navbar-inverse {
   background-image: linear-gradient(var(--grey2), var(--grey1));
-  color: var(--link_local)
+  color: var(--link_main)
 }
 
 .navbar-inverse .navbar-brand {
-  color: var(--link_local);
+  color: var(--link_main);
 }
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: var(--link_local_hover);
+  color: var(--link_main_hover);
 }
 
 .navbar-inverse .navbar-nav>.open>a,
@@ -525,6 +623,10 @@ background-color: var(--grey9);
   color: white;
 }
 
+.profile-title {
+  color: #00FF00;
+}
+
 .resellers .panel-heading {
   background-image: linear-gradient(var(--grey1), var(--black));
 }
@@ -541,12 +643,17 @@ background-color: var(--grey9);
   background: var(--link_local_hover);
 }
 
+.support .nav-tabs {
+  background-color: var(--black);
+  border-bottom: var(--border_medium);
+}
+
 .support .nav-tabs li.active>a {
-  border-bottom-color: var(--border_black);
+  border-bottom-color: var(--border_grey2);
 }
 
 .support .nav-tabs li.active>a:hover {
-  border-bottom-color: var(--border_black);
+  border-bottom-color: var(--border_grey2);
   border-top: 1px solid var(--border_medium);
   border-left: 1px solid var(--border_medium);
   border-right: 1px solid var(--border_medium);
@@ -555,7 +662,7 @@ background-color: var(--grey9);
 }
 
 .support .nav-tabs li.active>a {
-  background-image: linear-gradient(var(--grey1), var(--black));
+  background-image: linear-gradient(var(--grey2), var(--grey2));
   border-top: 1px solid var(--border_medium);
   border-left: 1px solid var(--border_medium);
   border-right: 1px solid var(--border_medium);
@@ -573,7 +680,7 @@ background-color: var(--grey9);
 }
 
 .support .tab-content {
-  background-color: var(--black);
+  background-color: var(--grey2);
   border-top: 1px solid var(--border_medium);
   border-left: 1px solid var(--border_medium);
   border-right: 1px solid var(--border_medium);
@@ -581,7 +688,10 @@ background-color: var(--grey9);
 }
 
 .table-bordered {
-  border: 1px solid var(--border_medium);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 .table-bordered thead {
@@ -596,11 +706,26 @@ background-color: var(--grey9);
 
 .table-bordered>tbody>tr>td {
   background-color: var(--black);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 .table-bordered>tbody.topiclist>tr>td {
   background-color: var(--black);
   border-color: var(--border_medium);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
+}
+
+.table.table-bordered.table-striped.sortable {
+  border-top: 1px solid var(--border_medium) !important;
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 .table-bordered>thead>tr>th {
@@ -619,14 +744,26 @@ background-color: var(--grey9);
 .table-bordered>tbody>tr>td,
 .table-bordered>tfoot>tr>td {
   border: 1px solid var(--border_medium);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td {
   background-color: var(--black);
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 .table-striped>tbody>tr:nth-child(even)>td {
   background-color: #151515;
+  border-top: 1px solid var(--border_medium);
+  border-left: 1px solid var(--border_medium);
+  border-right: 1px solid var(--border_medium);
+  border-bottom: 1px solid var(--border_medium);
 }
 
 .table>tbody>tr>td.separator {
@@ -676,26 +813,38 @@ background-color: var(--grey9);
 }
 
 /* ID Selectors */
+#account-nav.nav-tabs {
+  background-color: var(--grey1);
+  border-top: 0px solid var(--grey2);
+  border-left: 0px solid var(--grey2);
+  border-bottom: 0px solid var(--grey2);
+  border-right: 0px solid var(--grey2);
+}
+
 #account-nav.nav-tabs li a {
+  border-top: 0px solid var(--grey2);
+  border-left: 0px solid var(--grey2);
+  border-bottom: 0px solid var(--grey2);
+  border-right: 0px solid var(--grey2);
   color: var(--link_local);
 }
 
-#account-nav.nav-tabs li.active a,
-#account-nav.nav-tabs li a:hover {
+#account-nav.nav-tabs li.active a {
   background-color: var(--grey1);
-  border-top: 1px solid var(--border_medium);
-  border-left: 1px solid var(--border_medium);
-  border-bottom: 1px solid var(--border_medium);
-  border-right: 1px solid var(--border_medium);
+  border-top: 1px solid var(--grey2);
+  border-left: 1px solid var(--grey2);
+  border-bottom: 1px solid var(--grey2);
+  border-right: 1px solid var(--grey2);
   color: var(--link_local_hover);
 }
 
-#account-nav.nav-tabs {
+#account-nav.nav-tabs li a:hover {
   background-color: var(--grey1);
-  border-top: 1px solid var(--border_medium);
-  border-left: 1px solid var(--border_medium);
-  border-bottom: 1px solid var(--border_medium);
-  border-right: 1px solid var(--border_medium);
+  border-top: 0px solid var(--grey2);
+  border-left: 0px solid var(--grey2);
+  border-bottom: 0px solid var(--grey2);
+  border-right: 0px solid var(--grey2);
+  color: var(--link_local_hover);
 }
 
 #contact-section .panel-heading h3 {
