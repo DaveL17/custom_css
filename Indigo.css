@@ -649,11 +649,11 @@ pre {
 }
 
 .support .nav-tabs li.active>a {
-  border-bottom-color: var(--border_grey2);
+  border-bottom-color: var(--grey2);
 }
 
 .support .nav-tabs li.active>a:hover {
-  border-bottom-color: var(--border_grey2);
+  border-bottom-color: var(--grey2);
   border-top: 1px solid var(--border_medium);
   border-left: 1px solid var(--border_medium);
   border-right: 1px solid var(--border_medium);
