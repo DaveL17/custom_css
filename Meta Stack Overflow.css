@@ -29,7 +29,7 @@ body {
 	--mp-muted-color: #333333;
 	--mp-popup-shadow: var(--bs-sm);
 	--mp-query-border-color: var(--black-100);
-	--mp-result-border: solid .5px var(--black-300));
+	--mp-result-border: solid .5px var(--black-300);
 	--mp-warning-color: var(--red-600);
 }
 

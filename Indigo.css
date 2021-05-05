@@ -310,6 +310,15 @@ div.postbody div.poster-info {
   border-bottom: 1px solid var(--border_medium);
 }
 
+.postbody div.content dl.file {
+background-color: #11111;
+padding: 3px;
+text-align: center;
+border: 0;
+max-width: 850px;
+margin: 0 auto;
+}
+
 div.topic-nav {
   color: var(--link_main_hover);
 }
