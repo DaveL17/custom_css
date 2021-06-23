@@ -253,6 +253,33 @@ div.dokuwiki table.inline td {
   border-bottom: 1px solid var(--border_medium);
 }
 
+div#nav-box.box {
+  background-color: #222222;
+  border-top: 0;
+  border-color: #777777;
+}
+
+div#p-tabs.row ul.nav.nav-tabs {
+  width: 100%;
+  border-bottom-color: #777777;
+}
+
+div#p-tabs.row ul.nav.nav-tabs li.active a {
+  border-top: 1px solid #777777;
+  border-left: 1px solid #777777;
+  border-right: 1px solid #777777;
+  background-color: #111111;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#111111), to(#222222));
+  background-image: -moz-linear-gradient(#111111, #222222);
+  background-image: -ms-linear-gradient(#111111, #222222);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #111111), color-stop(100%, #222222));
+  background-image: -webkit-linear-gradient(#111111, #222222);
+  background-image: -o-linear-gradient(#111111, #222222);
+  background-image: linear-gradient(#111111, #222222);
+  color: #444444;
+}
+
 div#plugin-detail-tabs-content {
   border-right: 1px solid var(--grey2);
   border-bottom: 1px solid var(--grey2);
@@ -311,7 +338,7 @@ div.postbody div.poster-info {
 }
 
 .postbody div.content dl.file {
-background-color: #11111;
+background-color: #111111;
 padding: 3px;
 text-align: center;
 border: 0;
@@ -421,6 +448,10 @@ pre {
 .open .dropdown-toggle.btn-xsmall {
   background-image: linear-gradient(var(--link_main_hover), var(--link_main_hover));
   border-color: var(--border_medium);
+}
+
+.cp-mini {
+  background-color: #333333;
 }
 
 .date {
@@ -903,6 +934,46 @@ pre {
 
 #contact-section .panel-heading {
   background-image: linear-gradient(var(--grey1), var(--black));
+}
+
+#cp-main div.well {
+  margin-top: 10px;
+  box-shadow: 0 1px 1px #111111;
+  border: 1px solid #222222;
+  background-color: #333333;
+}
+
+#cp-main div.panel {
+  background-color: #222222;
+  border-left: 1px solid #777777;
+  border-bottom: 1px solid #777777;
+  border-right: 1px solid #777777;
+}
+
+#navigation ul {
+  border: 1px solid #777777;
+}
+
+#navigation a {
+  color: #777777;
+  background: #222222;
+}
+
+#navigation #active-subsection a {
+  color: var(--link_local_hover);
+  background-color: #333333;
+  background-image: none;
+  border-top: 1px solid #777777;
+  border-bottom: 1px solid #777777;
+}
+
+#navigation #active-subsection a:hover,
+#navigation #active-subsection a:focus {
+  color: var(--link_local_hover);
+  background-color: #333333;
+  background-image: none;
+  border-top: 1px solid #777777;
+  border-bottom: 1px solid #777777;
 }
 
 #search .box .row {
